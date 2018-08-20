@@ -10,7 +10,7 @@
 </head>
 <body> <!--Inicio do corpo da página--> 
 
-<nav class= "navbar bg-light navbar-light navbar-expand-md">
+<nav class= "navbar bg-light navbar-light navbar-expand-md fixed-top">
 
 <!--<nav>-->
     <!--Classes são conjuntos de caracteristas no css-->
@@ -23,73 +23,130 @@
             <!-- <img src="images/logo.jpg" alt="logo" style="width: 50px;"> Adicionando um logo para pagina-->
             <!--alt="logo" para usuarios cegos-->
         </a>
-        <div class="navbar-nav mr-auto"> <!--Deixa a barra de navegação vertical (sem isso ela é horizontal)-->
-            <!--href referencia para onde você é redirecionado-->
-            <!-- <a class="nav-item nav-link active" href="#">Home</a> < '#' -> é o topo da página> -->
-            <a class="nav-item nav-link" href="#excursoes">Excursões</a></li>
-            <div class="dropdown"> <!--Transformar o item cultura em um menu dropdown-->
-                <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#">Cultura</a>
-                <div class="dropdown-menu"> <!--Items do menu-->
-                    <a class="dropdown-item" href="#">Museus</a>
-                    <a class="dropdown-item" href="#">Feiras</a>
-                    <a class="dropdown-item" href="#">Bibliotecas</a>
-                    <a class="dropdown-item" href="#">Livrarias</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu"> <!-- collapse -> navbar -->
+            <div class="navbar-nav mr-auto"> <!--Deixa a barra de navegação vertical (sem isso ela é horizontal)-->
+                <!--href referencia para onde você é redirecionado-->
+                <!-- <a class="nav-item nav-link active" href="#">Home</a> < '#' -> é o topo da página> -->
+                <a class="nav-item nav-link" href="#excursoes">Excursões</a></li>
+                <div class="dropdown"> <!--Transformar o item cultura em um menu dropdown-->
+                    <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#">Cultura</a>
+                    <div class="dropdown-menu"> <!--Items do menu-->
+                        <a class="dropdown-item" href="#">Museus</a>
+                        <a class="dropdown-item" href="#">Feiras</a>
+                        <a class="dropdown-item" href="#">Bibliotecas</a>
+                        <a class="dropdown-item" href="#">Livrarias</a>
+                    </div>
                 </div>
+                <a class="nav-item nav-link" href="#">Rio à Noite</a>
+                <a class="nav-item nav-link" href="#">Carnaval</a>
+                <a class="nav-item nav-link" href="#">Mapas <span class="oi oi-globe"></span></a> <!--oi -> relaciona icone-->
+                <!--https://useiconic.com/open-->
             </div>
-            <a class="nav-item nav-link" href="#">Rio à Noite</a>
-            <a class="nav-item nav-link" href="#">Carnaval</a>
-            <a class="nav-item nav-link" href="#">Mapas</a>
         </div>
         <!--Exibir quando tela for do tamanho certo-->
         <!-- <span class="newbar-text d-none d-xl-inline-block">As melhores excurções do Rio!</span>--> 
     </div>
 </nav>
 <!-- Aqui não estamos usando containers para que a imagem em background ocupe toda a largura do browser - sem padding -->
-<img src="images/cristo-redentor-1.jpg">
+<!--<img src="images/cristo-redentor-1.jpg">-->
+
+<header style="margin-top: 55px" class="bgimage d-none d-md-block"></header>
+<!--(d-md-block)a imagem será exibida de md para cima (xs,sm,md,lg,xl)-->
+
+<div style="margin-top: 55px" class="d-block d-md-none"></div>
 
 <div class="container"> <!--.container + tab--> <!--vai criar um espacamento do corpo dentro de div-->
     <br>
-    <!--<h2 style="display: none" id="marcos">Marcos da Cidade</h2>-->
-    <h2 id="marcos">Marcos da Cidade</h2> <!--display none -> não mostrar | display block -> mostrar-->
-    <p>Alguns dos principais marcos da cidade do Rio de Janeiro são a praia de Copacabana, a estátua do Cristo
-        Redentor no topo do monte Corcovado, a montanha do Pão de Açucar com seus bondinhos, o Maracanã, um
-        dos maiores estádios do mundo, as ciclovias da cidade e os Arcos da Lapa.</p>
-
-    <img class="card-img-top rounded" src="images/ciclovia-flamengo.jpg" alt="Ciclovias">
-    <h4 class="card-title">Ciclovias da Cidade</h4>
-    <p class="card-text">O&nbsp; Rio&nbsp; possui&nbsp; uma&nbsp; extensa&nbsp; malha&nbsp; de&nbsp; ciclovias.&nbsp; As&nbsp; principais&nbsp; vias&nbsp; começam
-        na&nbsp; Marina&nbsp; da&nbsp; Glória&nbsp; no&nbsp; centro&nbsp; da&nbsp; Cidade,&nbsp; passando&nbsp; por&nbsp; toda&nbsp; a&nbsp; Zona&nbsp; Sul&nbsp; até&nbsp; o&nbsp; Leblon.&nbsp;</p>
-
-    <img class="card-img-top rounded" src="images/copacabana.jpg" alt="Copacabana">
-    <h4 class="card-title">Praia de Copacabana</h4>
-    <p class="card-text">Copacabana que é também conhecida como "Princesinha do Mar" por
-        causa de uma famosa canção em sua homenagem, é um dos locais mais conhecidos do Brasil
-        e do mundo.</p>
-
-    <img class="card-img-top rounded" src="images/cristo-redentor.jpg" alt="Cristo Redentor">
-    <h4 class="card-title">Cristo Redentor</h4>
-    <p class="card-text">Entre os mais principais pontos turísticos do Rio de Janeiro, está o
-        Corcovado com a estátua do Cristo Redentor e o Pão de Açucar. De cima de ambos tem-se uma
-        vista magnifíca da cidade.</p>
-
-    <img class="card-img-top rounded" src="images/lapa.jpg" alt="Lapa">
-    <h4 class="card-title">Arcos da Lapa</h4>
-    <p class="card-text">A Lapa é um local super&nbsp; democrático e rico em&nbsp; diversidade, que abriga&nbsp;
-        todas as tribos do cidade. Lá&nbsp; podemos encontrar bons&nbsp; restaurantes e bares, alguns&nbsp; com música
-        ao vivo,&nbsp; e muita&nbsp; concentração&nbsp; de jovens.&nbsp;</p>
-
-    <img class="card-img-top rounded border-0" src="images/maracana.jpg" alt="Maracanã">
-    <h4 class="card-title">Maracanã</h4>
-    <p class="card-text">Construído para abrigar a Copa do Mundo de 1950, o Maracanã já foi o maior
-        estádio de futebol do mundo, mas perdeu este status em reforma recente. Visitá-lo,
-        especialmente em dias de jogos, pode ser algo inesquecível.</p>
-
-    <img class="card-img-top rounded" src="images/pao-de-acucar.jpg" alt="Pão de Açucar">
-    <h4 class="card-title">Pão de Açucar</h4>
-    <p class="card-text">Localizado no bairro da Urca, o bondinho é uma das principais atrações
-        turísticas da cidade. Liga a Praia Vermelha ao morro da Urca e ao morro do Pão de Açúcar.
-        O bondinho foi cenário do filme 007 contra o Foguete da Morte, de 1979.</p>
-
+    <div class="jumbotron"> <!-- classe especial -> cria uma caixa cinza em volta do texto>
+        <!--<h2 style="display: none" id="marcos">Marcos da Cidade</h2>-->
+        <h2 id="marcos">Marcos da Cidade</h2> <!--display none -> não mostrar | display block -> mostrar-->
+        <p>Alguns dos principais marcos da cidade do Rio de Janeiro são a praia de Copacabana, a estátua do Cristo
+            Redentor no topo do monte Corcovado, a montanha do Pão de Açucar com seus bondinhos, o Maracanã, um
+            dos maiores estádios do mundo, as ciclovias da cidade e os Arcos da Lapa.</p>
+    </div>
+    <!--cardgroup em todos os h4 -> criando um grupo de imagens e descrições -->
+    <div class="card-group">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card md-4">
+                    <div class="card-body">
+                        <img class="card-img-top rounded" src="images/ciclovia-flamengo.jpg" alt="Ciclovias">
+                        <h4 class="card-title">Ciclovias da Cidade</h4>
+                        <p class="card-text">O&nbsp; Rio&nbsp; possui&nbsp; uma&nbsp; extensa&nbsp; malha&nbsp; de&nbsp; ciclovias.&nbsp; As&nbsp; principais&nbsp; vias&nbsp;
+                            começam na&nbsp; Marina&nbsp; da&nbsp; Glória&nbsp; no&nbsp; centro&nbsp; da&nbsp; Cidade,&nbsp; passando&nbsp; por&nbsp; toda&nbsp; a&nbsp; Zona&nbsp; Sul&nbsp;
+                            até&nbsp; o&nbsp; Leblon.&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card md-4">
+                    <div class="card-body">
+                        <img class="card-img-top rounded" src="images/copacabana.jpg" alt="Copacabana">
+                        <h4 class="card-title">Praia de Copacabana</h4>
+                        <p class="card-text">Copacabana que é também conhecida como
+                            <!--Cria um tooltip-->
+                            <!--É preciso "ativar" o tooltip no arquivo script.js de javascript-->
+                            <a href="#" data-toggle="tooltip"
+                                        data-placement="top"
+                                        title="Tom Jobim: Copacabana, princesinha do mar Pelas manhãs tu és a
+                                        vida a cantar E a tardinha o sol poente Deixa sempre uma saudade na gente">
+                                "Princesinha do Mar"
+                            </a> por causa de uma famosa canção em sua homenagem, é um dos locais mais conhecidos
+                            do Brasil e do mundo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card md-4">
+                    <div class="card-body">
+                        <img class="card-img-top rounded" src="images/cristo-redentor.jpg" alt="Cristo Redentor">
+                        <h4 class="card-title">Cristo Redentor</h4>
+                        <p class="card-text">Entre os mais principais pontos turísticos do Rio de Janeiro, está o
+                            Corcovado com a estátua do Cristo Redentor e o Pão de Açucar. De cima de ambos tem-se uma
+                            vista magnifíca da cidade.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card md-4">
+                    <div class="card-body">
+                        <img class="card-img-top rounded" src="images/lapa.jpg" alt="Lapa">
+                        <h4 class="card-title">Arcos da Lapa</h4>
+                        <p class="card-text">A Lapa é um local super&nbsp; democrático e rico em&nbsp; diversidade, que abriga&nbsp;
+                            todas as tribos do cidade. Lá&nbsp; podemos encontrar bons&nbsp; restaurantes e bares, alguns&nbsp; com música
+                            ao vivo,&nbsp; e muita&nbsp; concentração&nbsp; de jovens.&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card md-4">
+                    <div class="card-body">
+                        <img class="card-img-top rounded border-0" src="images/maracana.jpg" alt="Maracanã">
+                        <h4 class="card-title">Maracanã</h4>
+                        <p class="card-text">Construído para abrigar a Copa do Mundo de 1950, o Maracanã já foi o maior
+                            estádio de futebol do mundo, mas perdeu este status em reforma recente. Visitá-lo,
+                            especialmente em dias de jogos, pode ser algo inesquecível.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card md-4">
+                    <div class="card-body">
+                        <img class="card-img-top rounded" src="images/pao-de-acucar.jpg" alt="Pão de Açucar">
+                        <h4 class="card-title">Pão de Açucar</h4>
+                        <p class="card-text">Localizado no bairro da Urca, o bondinho é uma das principais atrações
+                            turísticas da cidade. Liga a Praia Vermelha ao morro da Urca e ao morro do Pão de Açúcar.
+                            O bondinho foi cenário do filme 007 contra o Foguete da Morte, de 1979.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <h4 id="excursoes">Nossas Excursões</h4>
