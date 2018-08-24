@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css"> <!--Referencia arquivo para definir um estilo-->
     <title>Bootstrap</title>
 </head>
-<body> <!--Inicio do corpo da página--> 
+<body> <!--Inicio do corpo da página-->
 
 <nav class= "navbar bg-light navbar-light navbar-expand-md fixed-top">
 
@@ -141,7 +141,16 @@
                         <h4 class="card-title">Pão de Açucar</h4>
                         <p class="card-text">Localizado no bairro da Urca, o bondinho é uma das principais atrações
                             turísticas da cidade. Liga a Praia Vermelha ao morro da Urca e ao morro do Pão de Açúcar.
-                            O bondinho foi cenário do filme 007 contra o Foguete da Morte, de 1979.</p>
+                            O bondinho foi cenário do filme <a tabindex="0" data-trigger="focus"
+                                                               data-toggle="popover"
+                                                               data-title="007 contra o Foguete da Morte"
+                                                               data-placement="bottom"
+                                                               data-content="Filme franco-britânico de acção, aventura, espionagem e ficção
+                                                               científica de 1979, o 11.º da série James Bond com Roger Moore no papel do
+                                                               agente secreto.">007 contra o Foguete da Morte</a>, de 1979.</p>
+                            <!--tabindex: (0 ou -1) se for -1, o comando "tab" quando for dado na página irá ignorar essa âncora-->
+                            <!--data-placement: texto irá aparecer abaixo da âncora-->
+                            <!--data-content: texto a ser exibido-->
                     </div>
                 </div>
             </div>
@@ -149,95 +158,185 @@
     </div>
 </div>
 
-<h4 id="excursoes">Nossas Excursões</h4>
+<h4 class="mb-3" id="excursoes">Nossas Excursões</h4>
 
-<br>
-Ilha Grande
-<br>
-<img src="images/ilha-grande-01-abraao.jpg" alt="Vila do Abraão">
-<h5>Vila do Abraão</h5>
-<span class="texto-media-body">É o principal local de chegada à Ilha Grande. Lá você encontra pousadas, campings, restaurantes, etc.</span>
+<div id="accordion"> <!--Tem esse código idêntico no bootstrap-->
+    <div class="card">
+        <div class="card-header">
+            <h5 class="mb-0">
+                <button class="btn btn-link"
+                        data-toggle="collapse"
+                        data-target="#ilha-grande"> <!--casa com o div logo abaixo-->
+                    Ilha Grande
+                </button>
+            </h5>
+        </div>
 
-<img src="images/ilha-grande-02-lagoa-azul.jpg" alt="Lagoa Azul">
-<h5>Lagoa Azul</h5>
-<span class="texto-media-body">Um local muito lindo com água azul turquesa e muitos peixes. Só é possível chegar lá de barco.</span>
-
-<img src="images/ilha-grande-03-aventureiro.jpg" alt="Praia do Aventureiro">
-<h5>Praia do Aventureiro</h5>
-<span class="texto-media-body">Uma das mais bonitas da Ilha Grande. A praia mede 600 metros e o mar é ótimo para a prática do Surf.</span>
-
-<img src="images/ilha-grande-04-lopes-mendes.jpg" alt="Lopes Mendes">
-<h5>Lopes Mendes</h5>
-<span class="texto-media-body">A mais famosa praia da Ilha Grande. São 3 km de areia muito branca e água cristalina.</span>
-
-<div>
-    <button type="button" class="btn btn-primary btn-md btn-block">Mais Informações</button>&nbsp;
-    <a href="cadastro.html" class="btn btn-secondary btn-md btn-block">Contratar</a>
+        <div id="ilha-grande"
+             class="collapse show"
+             data-parent="#accordion">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="media">
+                            <img class="mr-3" src="images/ilha-grande-01-abraao.jpg" alt="Vila do Abraão">
+                            <div class="media-body">
+                                <h5 class="mt-0">Vila do Abraão</h5>
+                                <span class="texto-media-body">É o principal local de chegada à Ilha Grande. Lá você encontra pousadas, campings, restaurantes, etc.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="media">
+                            <img class="mr-3" src="images/ilha-grande-02-lagoa-azul.jpg" alt="Lagoa Azul">
+                            <div class="media-body">
+                                <h5 class="mt-0">Lagoa Azul</h5>
+                                <span class="texto-media-body">Um local muito lindo com água azul turquesa e muitos peixes. Só é possível chegar lá de barco.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="media">
+                            <img class="mr-3" src="images/ilha-grande-03-aventureiro.jpg" alt="Praia do Aventureiro">
+                            <div class="media-body">
+                                <h5 class="mt-0">Praia do Aventureiro</h5>
+                                <span class="texto-media-body">Uma das mais bonitas da Ilha Grande. A praia mede 600 metros e o mar é ótimo para a prática do Surf.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="media">
+                            <img class="mr-3" src="images/ilha-grande-04-lopes-mendes.jpg" alt="Lopes Mendes">
+                            <div class="media-body">
+                                <h5 class="mt-0">Lopes Mendes</h5>
+                                <span class="texto-media-body">A mais famosa praia da Ilha Grande. São 3 km de areia muito branca e água cristalina.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="altura-da-linha">
+                    <button type="button" class="btn btn-primary btn-md btn-block">Mais Informações</button>&nbsp;
+                    <a href="cadastro.html" class="btn btn-secondary btn-md btn-block">Contratar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed"
+                        data-toggle="collapse"
+                        data-target="#paraty">
+                    Paraty
+                </button>
+            </h5>
+        </div>
+        <div id="paraty"
+             class="collapse"
+             data-parent="#accordion">
+            <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed"
+                        data-toggle="collapse"
+                        data-target="#buzios">
+                    Buzios e Arraial do Cabo
+                </button>
+            </h5>
+        </div>
+        <div id="buzios"
+             class="collapse"
+             data-parent="#accordion">
+            <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+            </div>
+        </div>
+    </div>
 </div>
-<br>
-Paraty
-<br>
-Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-<br>
-Buzios e Arraial do Cabo
-<br>
-Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-<br>
-<br>
 
 <h4>Depoimentos sobre Excursões</h4>
-<blockquote class="blockquote">
-    <p class="mb-0">Adipisci veritatis esse expedita odit neque quam! Repellat quas ad cum porro amet, maiores, ullam
-        doloremque, ab dolores in magni ea enim. Commodi quidem consequuntur animi nemo pariatur cumque
-        distinctio.</p>
-    <footer class="blockquote-footer">Luis Gustavo Pereira Filho</footer>
-</blockquote>
-<blockquote class="blockquote">
-    <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-        rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo.</p>
-    <footer class="blockquote-footer">Serio Albuquerque</footer>
-</blockquote>
-<blockquote class="blockquote">
-    <p class="mb-0">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-        dolores eos qui ratione voluptatem sequi nesciunt.</p>
-    <footer class="blockquote-footer">Pedro Arnaldo Soares</footer>
-</blockquote>
+<div class="row">
+    <div class="col-lg-4 col-md-6">
+        <blockquote class="blockquote">
+            <p class="mb-0">Adipisci veritatis esse expedita odit neque quam! Repellat quas ad cum porro amet, maiores, ullam
+                doloremque, ab dolores in magni ea enim. Commodi quidem consequuntur animi nemo pariatur cumque</p>
+            <footer class="blockquote-footer">Luis Gustavo Pereira Filho</footer>
+        </blockquote>
+    </div>
+    <div class="col-lg-4 col-md-6">
+        <blockquote class="blockquote">
+            <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt</p>
+            <footer class="blockquote-footer">Serio Albuquerque</footer>
+        </blockquote>
+    </div>
+    <div class="col-lg-4 col-md-6">
+        <blockquote class="blockquote">
+            <p class="mb-0">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            <footer class="blockquote-footer">Pedro Arnaldo Soares</footer>
+        </blockquote>
+    </div>
+</div>
 
 <h5>Nossas Excursões</h5>
-<ul class='list-unstyled'>
-    <li><i>Baia da </i><a href='#excursoes'> Ilha Grande</a></li>
-    <li><a href='#excursoes'>Paraty</a></li>
-    <li><a href='#excursoes'>Búzios e Arraial do Cabo</a></li>
-</ul>
+<div class='footer'>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-md-4 col-sm-12'>
+                <h5>Nossas Excursões</h5>
+                <ul class='list-unstyled'>
+                    <li><i>Baia da </i><a href='#excursoes'> Ilha Grande</a></li>
+                    <li><a href='#excursoes'>Paraty</a></li>
+                    <li><a href='#excursoes'>Búzios e Arraial do Cabo</a></li>
+                </ul>
+            </div>
 
-<h5>Cultura</h5>
-<ul class='list-unstyled'>
-    <li><a href='#'>Museus</a></li>
-    <li><a href='#'>Feiras</a></li>
-    <li><a href='#'>Bibliotecas</a></li>
-    <li><a href='#'>Livrarias</a></li>
-</ul>
+            <div class='col-md-2 col-sm-6'>
+                <h5>Cultura</h5>
+                <ul class='list-unstyled'>
+                    <li><a href='#'>Museus</a></li>
+                    <li><a href='#'>Feiras</a></li>
+                    <li><a href='#'>Bibliotecas</a></li>
+                    <li><a href='#'>Livrarias</a></li>
+                </ul>
+            </div>
 
-<h5>Rio à Noite</h5>
-<ul class='list-unstyled'>
-    <li><a href='#'>Boates</a></li>
-    <li><a href='#'>Bares</a></li>
-    <li><a href='#'>Restaurantes</a></li>
-</ul>
+            <div class='col-md-2 col-sm-6'>
+                <h5>Rio à Noite</h5>
+                <ul class='list-unstyled'>
+                    <li><a href='#'>Boates</a></li>
+                    <li><a href='#'>Bares</a></li>
+                    <li><a href='#'>Restaurantes</a></li>
+                </ul>
+            </div>
 
-<h5>Outros</h5>
-<ul class='list-unstyled'>
-    <li><a href='#'>Carnaval</a></li>
-    <li><span class="oi oi-globe"></span><a href='#'> Mapas</a></li>
-</ul>
+            <div class='clearfix visible-xs'></div>
 
-<h5>Contato</h5>
-<ul class='list-unstyled'>
-    <li><span class="oi oi-person"></span> Kathira</li>
-    <li><span class="oi oi-phone"></span> (99)99999-9999</li>
-    <li><span class="oi oi-envelope-closed"></span> <a href='mailto:popo@pb.dum.br'>popo@pb.dum.br</a></li>
-</ul>
+            <div class='col-md-2 col-sm-6'>
+                <h5>Outros</h5>
+                <ul class='list-unstyled'>
+                    <li><a href='#'>Carnaval</a></li>
+                    <li><span class="oi oi-globe"></span><a href='#'> Mapas</a></li>
+                </ul>
+            </div>
+
+            <div class='col-md-2 col-sm-6'>
+                <h5>Contato</h5>
+                <ul class='list-unstyled'>
+                    <li><span class="oi oi-person"></span> Kathira</li>
+                    <li><span class="oi oi-phone"></span> (99)99999-9999</li>
+                    <li><span class="oi oi-envelope-closed"></span> <a href='mailto:popo@pb.dum.br'>popo@pb.dum.br</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--Essas 4 linhas fazem referencia a uma pasta/arquivos javascript-->
 <script src="js/jquery-3.3.1.js"></script> <!--popper usa jquery-->
@@ -255,4 +354,5 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
 <!--navbar-expand-md -> ajeitar para ficar em uma linha-->
 <!--mr-auto -> alinhamento a esquerda (margem right)-->
 <!--active -> highlight de botões da barra de navegador-->
-<!---->
+<!--href -> redirecionar-->
+<!--mb0 -> nenhuma margem | mb1 -> 1/4 | mb2 -> 1/2-->

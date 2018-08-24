@@ -7,3 +7,4 @@ $(function() {
 });
 
 //Libera o tooltip e o popover
+//Encontre o atributo data-toggle com valor.... (tooltip | popover)
