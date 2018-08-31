@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Bootstrap</title>
+</head>
+<body>
+
+    <nav class="navbar bg-light navbar-light navbar-expand-md fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                Rio de Janeiro
+                <!--<img src="images/logo.jpg" alt="logo" style="width: 55px;">-->
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <div class="navbar-nav mr-auto">
+                    <!--<a class="nav-item nav-link active" href="#">Home</a>-->
+                    <a class="nav-item nav-link" href="#">Excursões</a>
+                    <div class="dropdown">
+                        <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#">Cultura</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Museus</a>
+                            <a class="dropdown-item" href="#">Feiras</a>
+                            <a class="dropdown-item" href="#">Bibliotecas</a>
+                            <a class="dropdown-item" href="#">Livrarias</a>
+                        </div>
+                    </div>
+                    <a class="nav-item nav-link" href="#">Rio à Noite</a>
+                    <a class="nav-item nav-link" href="#">Carnaval</a>
+                    <a class="nav-item nav-link" href="#">Mapas <span class="oi oi-globe"></span></a>
+                </div>
+            </div>
+            <!--<span class="navbar-text d-none d-xl-block">As melhores excursões do Rio!</span>-->
+        </div>
+    </nav>
+
+    <!-- Aqui não estamos usando containers para que a imagem em background ocupe toda a largura do browser - sem padding -->
+    <!--<img src="images/cristo-redentor-1.jpg">-->
+    <header style="margin-top: 55px;" class="bgimage d-none d-md-block"></header>
+
+    <div style="margin-top: 75px;" class="d-block d-md-none"></div>
+
+    <div class="container">
+
+
+        <h4 class="text-center mt-4">Dados Pessoais</h4>
+
+        <form id="id_form" method="get">
+
+            <div class="form-group">
+                <label for="id_nome">Nome</label>
+                <input id="id_nome" name="nome" class="form-control">
+                <div id="id_nome_required" class="invalid-feedback">Campo de preenchimento obrigatório</div>
+            </div>
+
+            <div class="form-group">
+                <label for="id_email">Email</label>
+                <input id="id_email" type="email" name="email" class="form-control">
+                <div id="id_email_required" class="invalid-feedback">Campo de preenchimento obrigatório</div>
+            </div>
+
+            <div class="form-group">
+                <label for="id_faixa_etaria">Faixa Etária</label>
+                <select id="id_faixa_etaria" name="faixaetaria" class="form-control" required> <!--size="3" multiple-->
+                    <option value="0">--- Selecione uma opção ---</option>
+                    <option value="0">Até 30 Anos</option>
+                    <option value="0">De 31 a 40 Anos</option>
+                    <option value="0">De 41 a 50 Anos</option>
+                    <option value="0">Acima de 50 Anos</option>
+                </select>
+                <div id="id_faixa_etaria_required" class="invalid-feedback">Campo de preenchimento obrigatório</div>
+            </div>
+
+            <div class="mt-3 mb-1">Sexo</div>
+
+            <div class="form-check">
+                <input id="id_masculino" type="radio" name="sex" value="M" class="form-check-input">
+                <label for="id_masculino" class="form-check-label">Masculino</label>
+            </div>
+
+            <div class="form-check">
+                <input id="id_feminino" type="radio" name="sex" value="F" class="form-check-input">
+                <label for="id_feminino" class="form-check-label">Masculino</label>
+            </div>
+            <div id="id_sexo_required" class="invalid-feedback">Campo de preenchimento obrigatório</div>
+
+            <div class="mt-3 mb-1">Preferência</div>
+
+            <div class="form-group form-check" style="margin-bottom: 3px;">
+                <input id="id_esporte" type="checkbox" name="esporte" value="M" class="form-check-input">
+                <label for="id_esporte" class="form-check-label">Esporte</label>
+            </div>
+
+            <div class="form-group form-check" style="margin-bottom: 3px;">
+                <input id="id_cinema" type="checkbox" name="cinema" value="M" class="form-check-input">
+                <label for="id_cinema" class="form-check-label">Cinema</label>
+            </div>
+
+            <div class="form-group form-check" style="margin-bottom: 3px;">
+                <input id="id_literatura" type="checkbox" name="literatura" value="M" class="form-check-input">
+                <label for="id_literatura" class="form-check-label">Literatura</label>
+            </div>
+
+            <div id="id_preferencia_required" class="invalid-feedback">Campo de preenchimento obrigatório</div>
+
+            <button id="id_botao" class="btn btn-primary mt-4 pl-4 pr-4" type="submit">Enviar</button>
+        </form>
+
+    </div>
+
+    <script>
+        document.querySelector("#id_nome").addEventListener("blur", validaNomeFunction, false);
+
+        document.querySelector("#id_nome").addEventListener("submit", function(e) { validaTudoFunction(e) }, false);
+
+        function validaTudoFunction(e) {
+            e.preventDefault()
+            let nomeValido = validaNomeFunction()
+
+            if (nomeValido) {
+                alert("Tudo OK!")
+            }
+            else {
+                alert("Deu errado!")
+            }
+        }
+
+        function validaNomeFunction() {
+            let nome = document.querySelector("#id_nome");
+
+            if(nome.value === ''){
+                nome.classList.add('is-invalid')
+                nome.classList.remove('is-valid')
+                document.querySelector("#id_nome_required").classList.remove("d-none");
+                return false;
+            }
+            else {
+                nome.classList.remove('is-invalid')
+                nome.classList.add('is-valid')
+                document.querySelector("#id_nome_required").classList.add("d-none");
+                return true;
+            }
+        }
+
+    </script>
+
+<div class='footer'>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-md-4'>
+                <h5>Nossas Excursões</h5>
+                <ul class='list-unstyled'>
+                    <li><i>Baia da </i><a href='#'> Ilha Grande</a></li>
+                    <li><a href='#'>Paraty</a></li>
+                    <li><a href='#'>Búzios e Arraial do Cabo</a></li>
+                </ul>
+            </div>
+
+            <div class='col-md-2 col-sm-6'>
+                <h5>Cultura</h5>
+                <ul class='list-unstyled'>
+                    <li><a href='#'>Museus</a></li>
+                    <li><a href='#'>Feiras</a></li>
+                    <li><a href='#'>Bibliotecas</a></li>
+                    <li><a href='#'>Livrarias</a></li>
+                </ul>
+            </div>
+
+            <div class='col-md-2 col-sm-6'>
+                <h5>Rio à Noite</h5>
+                <ul class='list-unstyled'>
+                    <li><a href='#'>Boates</a></li>
+                    <li><a href='#'>Bares</a></li>
+                    <li><a href='#'>Restaurantes</a></li>
+                </ul>
+            </div>
+
+            <div class='clearfix visible-xs'></div>
+
+            <div class='col-md-2 col-sm-6'>
+                <h5>Outros</h5>
+                <ul class='list-unstyled'>
+                    <li><a href='#'>Carnaval</a></li>
+                    <li><span class="oi oi-globe"></span><a href='#'> Mapas</a></li>
+                </ul>
+            </div>
+
+            <div class='col-md-2 col-sm-6'>
+                <h5>Contato</h5>
+                <ul class='list-unstyled'>
+                    <li><span class="oi oi-person"></span> Kathira</li>
+                    <li><span class="oi oi-phone"></span> (99)99999-9999</li>
+                    <li><span class="oi oi-envelope-closed"></span> <a href='mailto:popo@pb.dum.br'>popo@pb.dum.br</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
+<!-- Formulário -> parametro de requisição -->
+<!-- Trabalho completar o script-->
