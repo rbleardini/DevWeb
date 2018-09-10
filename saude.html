@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Bootstrap</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand ml-5 col-2" href="#" title="Minha Vida - Saúde, Alimentação e Bem-Estar">
+        <img src="https://images1.minhavida.com.br/Content/images/responsivo/logos/novo-logo-minhavida.png" class="img-responsive logo" alt="Minha vida - saúde, alimentação e bem-estar" id="minha-vida">
+    </a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbarColor02" style="">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary" ><a href="saude.html" style="color: white">saúde</a></button>
+                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu bg-primary">
+                        <a class="dropdown-item" href="#">Saúde de A a Z</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Bulas de A a Z</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Guia Dor nas Costas</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Guia da Saúde Bucal</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Guia convivendo com Artrite Psoriásica</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Guia das Doenças Inflamatórias Intestinais</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Especial Qualidade de Vida Medley</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Especial Autocuidado</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Especial Diarréia</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Só entre elas</a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success"><a href="alimentacao.html" style="color: white">alimentação</a></button>
+                    <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu bg-success">
+                        <a class="dropdown-item" href="#">Alimentação de A a Z</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Receitas</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Especial Vigor: É gostoso descobrir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">O poder das sementes</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger" ><a href="beleza.html" style="color: white">beleza</a></button>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu bg-danger">
+                        <a class="dropdown-item" href="#">Beleza de A a Z</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-warning">fitness</button>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-toolbar">família</button>
+                    <button type="button" class="btn btn-toolbar dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu ">
+                        <a class="dropdown-item" href="#">Especial Combate à Obesidade Infantil</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Especial Puberdade Precoce</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Guida da Cólica do Bebê</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-info">bem-estar</button>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search<span class="icon-search"></span>
+            </button>
+        </form>
+    </div>
+</nav>
+<!--
+<script>
+    function myFunction1() {
+        window.location.replace('saude.html');
+    }
+    function myFunction2() {
+        window.location.replace('alimentacao.html');
+    }
+    function myFunction3() {
+        window.location.replace('beleza.html');
+    }
+</script>
+-->
+<div class="bg-home">
+    <div class="container">
+        <div class="breadcrumb" id="barra_saude">
+            <li class="breadcrumb-item active" aria-current="page" id="item_barra">Saúde</li>
+        </div>
+
+        <div id="bomdiaecia" class="carousel" data-ride="carousel" style="margin-left: 3.5em;">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-10" src="images/pais%20fumantes_33725_250_375.jpg" alt="Primeiro slide">
+                    <div class="carousel-caption">
+                        <p>Filhos de fumantes têm mais chances de morrer de doenças pulmonares, diz estudo</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-10" src="images/prescrição-médica_33723_250_375.jpg" alt="Segundo Slide">
+                    <div class="carousel-caption">
+                        <p>Médica faz receita para paciente analfabeto e foto viraliza</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-10" src="images/dor%20no%20ombro_33720_250_375.jpg" alt="Terceiro Slide">
+                    <div class="carousel-caption">
+                        <p>Dor no ombro? Descubra quando procurar ajuda</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#bomdiaecia" role="button" data-slide="prev" id="prev1">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#bomdiaecia" role="button" data-slide="next" id="next1">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<div class="bg-mid">
+    <div class="container">
+        <div class="card mt-4 ml-5" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title" id="card1">Pergunte ao Especialista</h5>
+                <p class="card-text">Suas dúvidas respondidas por especialistas em saúde</p>
+                <a href="#" class="btn btn-primary mb-2">Perguntar</a>
+                <img class="card-img-top" src="images/especialistas.png" alt="Card image cap">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card-group ml-3">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card mt-5" style="width: 18rem; background-color: deepskyblue">
+                        <div class="card-body">
+                            <h6 class="card-title text-white font-weight-bold">Calcule sua expectativa de vida</h6>
+                            <p class="card-text" style="font-size: 14px; color: white;">Descubra como viver mais e melhor</p>
+                            <input placeholder="dd/mm/aaaa" type="text" name="data" class="form-control mb-2" maxlength="10">
+                            <label  for="masculino" class="masculino">
+
+                                <input type="radio" value="m" id="masculino" name="s">
+                                Masculino
+                            </label>
+                            <label for="feminino" class="feminino">
+                                <input type="radio" value="f" id="feminino" name="s">
+                                Feminino
+                            </label>
+                            <a href="#" class="btn btn-primary mb-2">DESCOBRIR AGORA</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card mt-5" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #b9bbbe;">GUIAS E ESPECIAIS</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card mt-5" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title" id="card2">RECEBA GRÁTIS NO SEU EMAIL</h5>
+                            <p class="card-text">Nossas novidades de saúde</p>
+                            <input placeholder="seu nome" type="text" name="data" class="form-control mb-2" maxlength="10">
+                            <input placeholder="seu email" type="text" name="data" class="form-control mb-2" maxlength="10">
+                            <label for="masculino" class="masculino">
+                                Sexo:
+                                <input type="radio" value="m" id="masculino1" name="s">
+                                Masculino
+                            </label>
+                            <label for="feminino" class="feminino">
+                                <input type="radio" value="f" id="feminino2" name="s">
+                                Feminino
+                            </label>
+                            <a href="#" class="btn btn-primary mb-2">RECEBER</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="card-text" style="font-size: 40px; color: #686868; margin-left: 23.5%; margin-top: 30px;">Especialistas em saúde </p>
+
+    <div class="container" style="margin-top: -26px;">
+        <div class="card-group ml-3">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card mt-5" style="width: 18rem;">
+                        <div class="card-body">
+                            <a href="#" style="font-size: 20px;">Presbifonia: nossa voz também envelhece</a>
+                            <img class="card-img mt-5" src="images/foto1.png" alt="Card image 3" style="border-radius: 50%; width: 100px; height: 100px;">
+                            <p style="margin-top: -9em; margin-left: 11em; font-size: 10px; color: #686868;">ESCRITO POR</p>
+                            <div class="card-body" style="margin-top: -2.5em; margin-left: 5.5em;">
+                                <a href="#" class="font-weight-bold" style="font-size: 13px;">
+                                    Tainá Ferreira
+                                </a>
+                            </div>
+                            <p style="margin-top: -1.7em; margin-left: 9.8em; font-size: 11px;">FONOAUDIOLOGIA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card mt-5" style="width: 18rem;">
+                        <div class="card-body">
+                            <a href="#" style="font-size: 18px;">Retirar as amígdalas pode aumentar risco de sobrepeso</a>
+                            <img class="card-img mt-5" src="images/foto2.png" alt="Card image 3" style="border-radius: 50%; width: 100px; height: 100px;">
+                            <p style="margin-top: -9em; margin-left: 11em; font-size: 10px; color: #686868;">ESCRITO POR</p>
+                            <div class="card-body" style="margin-top: -2.5em; margin-left: 5.5em;">
+                                <a href="#" class="font-weight-bold" style="font-size: 13px;">
+                                    Dra.Andressa Soares
+                                </a>
+                            </div>
+                            <p style="margin-top: -1.7em; margin-left: 9.8em; font-size: 11px;">ENDOCRINOLOGIA E METABOLOGIA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card mt-5" style="width: 18rem;">
+                        <div class="card-body">
+                            <a href="#" style="font-size: 20px;">Previna a endometriose com ajuda da alimentação</a>
+                            <img class="card-img mt-5" src="images/foto3.png" alt="Card image 3" style="border-radius: 50%; width: 100px; height: 100px;">
+                            <p style="margin-top: -9em; margin-left: 11em; font-size: 10px; color: #686868;">ESCRITO POR</p>
+                            <div class="card-body" style="margin-top: -2.5em; margin-left: 5.5em;">
+                                <a href="#" class="font-weight-bold" style="font-size: 13px;">
+                                    Dr.Marco Aurelio Oliveira
+                                </a>
+                            </div>
+                            <p style="margin-top: -1.7em; margin-left: 9.8em; font-size: 11px;">GINECOLOGIA E OBSTETRÍCIA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card-group ml-3">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card mt-5" style="width: 18rem; background-color: deepskyblue">
+                        <div class="card-body">
+                            <h6 class="card-title text-white font-weight-bold" style="font-size: 1.1em">Encontre um médico
+                                indicado por outras pessoas</h6>
+                            <select id="especialidadeBusca" class="form-control mb-2">
+                                <option value="0">Especialidade</option>
+                                <option value="1">Acupuntura (Dores, Bem-Estar)</option>
+                                <option value="2">Alergia e Imunologia (Rinite, Asma, Coceira)</option>
+                                <option value="3">Anestesista</option>
+                                <option value="4">Angiologista (Varizes)</option>
+                                <option value="6">Cardiologista (Coração)</option>
+                                <option value="7">Cirurgia Cardiovascular</option>
+                                <option value="64">Cirurgia da Coluna Vertebral (Lombar, Hérnia)</option>
+                                <option value="8">Cirurgia da Mão</option>
+                                <option value="9">Cirurgia de Cabeça e Pescoço</option>
+                                <option value="10">Cirurgia do Aparelho Digestivo</option>
+                                <option value="11">Cirurgia Geral</option>
+                                <option value="65">Cirurgia Ocular (Glaucoma, Catarata)</option>
+                                <option value="12">Cirurgia Pediátrica</option>
+                                <option value="13">Cirurgia Plástica</option>
+                                <option value="14">Cirurgia Torácica</option>
+                                <option value="15">Cirurgia Vascular</option>
+                                <option value="16">Clínico Geral (Acompanhamento, Diagnóstico, Check-up)</option>
+                                <option value="17">Coloproctologista (Intestino, Reto e Ânus)</option>
+                                <option value="47">Dentista</option>
+                                <option value="18">Dermatologista (Pele)</option>
+                                <option value="19">Educação Física e Personal Trainer</option>
+                                <option value="20">Endocrinologista e Metabologista (Diabetes, Hormônios)</option>
+                                <option value="21">Endoscopista</option>
+                                <option value="22">Farmacêutico Bioquímico</option>
+                                <option value="37">Fisiatra (Reabilitação Física)</option>
+                                <option value="23">Fisioterapeuta (Reabilitação Física)</option>
+                                <option value="24">Fonoaudiologo (Audição, Dicção, Linguagem e Voz)</option>
+                                <option value="25">Gastroenterologista (Estômago, Intestino)</option>
+                                <option value="26">Geneticista</option>
+                                <option value="27">Geriatra (Envelhecimento)</option>
+                                <option value="28">Ginecologista e Obstetra (Gravidez)</option>
+                                <option value="29">Hematologista e Hemoterapeuta (Sangue, Anemia)</option>
+                                <option value="30">Homeopata</option>
+                                <option value="31">Infectologista</option>
+                                <option value="38">Intensivista (UTI)</option>
+                                <option value="32">Mastologista (Cirurgia de Mama)</option>
+                                <option value="68">Medicina Hiperbárica (Mergulho)</option>
+                                <option value="40">Medicina Nuclear</option>
+                                <option value="41">Medicina Preventiva e Social</option>
+                                <option value="36">Médico de Esportes</option>
+                                <option value="33">Médico de Família e Comunidade</option>
+                                <option value="35">Médico de Trabalho</option>
+                                <option value="34">Médico de Tráfego</option>
+                                <option value="42">Nefrologista (Rim, Sistema Urinário)</option>
+                                <option value="43">Neurocirurgião</option>
+                                <option value="44">Neurologista (Cabeça)</option>
+                                <option value="45">Nutricionista (Alimentação e Emagrecimento)</option>
+                                <option value="46">Nutrólogo (Alimentação, Obesidade)</option>
+                                <option value="48">Oftalmologista (Olhos, Visão)</option>
+                                <option value="5">Oncologista (Cancer)</option>
+                                <option value="49">Ortopedista e Traumatologista (Coluna, Joelho, Tornozelo)</option>
+                                <option value="50">Otorrinolaringologista (Garganta, Ouvido, Nariz)</option>
+                                <option value="52">Patologista Clínico / Medicina Laboratorial</option>
+                                <option value="53">Pediatra (Bebês, Crianças)</option>
+                                <option value="54">Pneumologista</option>
+                                <option value="55">Psicanalista (Compreensão da Mente)</option>
+                                <option value="56">Psicólogo (Disturbios Emocionais)</option>
+                                <option value="57">Psiquiatra (Ansiedade, Depressão)</option>
+                                <option value="58">Radiologia e Diagnóstico por Imagem</option>
+                                <option value="59">Radioterapeuta</option>
+                                <option value="60">Reumatologista</option>
+                                <option value="61">Urologista (Sist. Reprodutor Masculino/Próstata)</option>
+                            </select>
+                            <input placeholder="digite o CEP" type="text" name="CEP" class="form-control mb-2" maxlength="15">
+
+                            <a href="#" class="btn btn-primary mb-2">BUSCAR</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card mt-5" style="width: 18rem; background-color: deepskyblue; margin-left: 4.6em">
+                        <div class="card-body">
+                            <h6 class="card-title text-white font-weight-bold" style="font-size: 1.1em">Encontre um médico
+                                indicado por outras pessoas</h6>
+                            <select id="especialidadeBusca2" class="form-control mb-2">
+                                <option value="0">Especialidade</option>
+                                <option value="1">Acupuntura (Dores, Bem-Estar)</option>
+                                <option value="2">Alergia e Imunologia (Rinite, Asma, Coceira)</option>
+                                <option value="3">Anestesista</option>
+                                <option value="4">Angiologista (Varizes)</option>
+                                <option value="6">Cardiologista (Coração)</option>
+                                <option value="7">Cirurgia Cardiovascular</option>
+                                <option value="64">Cirurgia da Coluna Vertebral (Lombar, Hérnia)</option>
+                                <option value="8">Cirurgia da Mão</option>
+                                <option value="9">Cirurgia de Cabeça e Pescoço</option>
+                                <option value="10">Cirurgia do Aparelho Digestivo</option>
+                                <option value="11">Cirurgia Geral</option>
+                                <option value="65">Cirurgia Ocular (Glaucoma, Catarata)</option>
+                                <option value="12">Cirurgia Pediátrica</option>
+                                <option value="13">Cirurgia Plástica</option>
+                                <option value="14">Cirurgia Torácica</option>
+                                <option value="15">Cirurgia Vascular</option>
+                                <option value="16">Clínico Geral (Acompanhamento, Diagnóstico, Check-up)</option>
+                                <option value="17">Coloproctologista (Intestino, Reto e Ânus)</option>
+                                <option value="47">Dentista</option>
+                                <option value="18">Dermatologista (Pele)</option>
+                                <option value="19">Educação Física e Personal Trainer</option>
+                                <option value="20">Endocrinologista e Metabologista (Diabetes, Hormônios)</option>
+                                <option value="21">Endoscopista</option>
+                                <option value="22">Farmacêutico Bioquímico</option>
+                                <option value="37">Fisiatra (Reabilitação Física)</option>
+                                <option value="23">Fisioterapeuta (Reabilitação Física)</option>
+                                <option value="24">Fonoaudiologo (Audição, Dicção, Linguagem e Voz)</option>
+                                <option value="25">Gastroenterologista (Estômago, Intestino)</option>
+                                <option value="26">Geneticista</option>
+                                <option value="27">Geriatra (Envelhecimento)</option>
+                                <option value="28">Ginecologista e Obstetra (Gravidez)</option>
+                                <option value="29">Hematologista e Hemoterapeuta (Sangue, Anemia)</option>
+                                <option value="30">Homeopata</option>
+                                <option value="31">Infectologista</option>
+                                <option value="38">Intensivista (UTI)</option>
+                                <option value="32">Mastologista (Cirurgia de Mama)</option>
+                                <option value="68">Medicina Hiperbárica (Mergulho)</option>
+                                <option value="40">Medicina Nuclear</option>
+                                <option value="41">Medicina Preventiva e Social</option>
+                                <option value="36">Médico de Esportes</option>
+                                <option value="33">Médico de Família e Comunidade</option>
+                                <option value="35">Médico de Trabalho</option>
+                                <option value="34">Médico de Tráfego</option>
+                                <option value="42">Nefrologista (Rim, Sistema Urinário)</option>
+                                <option value="43">Neurocirurgião</option>
+                                <option value="44">Neurologista (Cabeça)</option>
+                                <option value="45">Nutricionista (Alimentação e Emagrecimento)</option>
+                                <option value="46">Nutrólogo (Alimentação, Obesidade)</option>
+                                <option value="48">Oftalmologista (Olhos, Visão)</option>
+                                <option value="5">Oncologista (Cancer)</option>
+                                <option value="49">Ortopedista e Traumatologista (Coluna, Joelho, Tornozelo)</option>
+                                <option value="50">Otorrinolaringologista (Garganta, Ouvido, Nariz)</option>
+                                <option value="52">Patologista Clínico / Medicina Laboratorial</option>
+                                <option value="53">Pediatra (Bebês, Crianças)</option>
+                                <option value="54">Pneumologista</option>
+                                <option value="55">Psicanalista (Compreensão da Mente)</option>
+                                <option value="56">Psicólogo (Disturbios Emocionais)</option>
+                                <option value="57">Psiquiatra (Ansiedade, Depressão)</option>
+                                <option value="58">Radiologia e Diagnóstico por Imagem</option>
+                                <option value="59">Radioterapeuta</option>
+                                <option value="60">Reumatologista</option>
+                                <option value="61">Urologista (Sist. Reprodutor Masculino/Próstata)</option>
+                            </select>
+                            <input placeholder="digite o CEP" type="text" name="CEP" class="form-control mb-2" maxlength="15">
+
+                            <a href="#" class="btn btn-primary mb-2">INDICAR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="card-text" style="font-size: 40px; color: #686868; margin-left: 23.5%; margin-top: 30px;">TV Minha Vida </p>
+
+    <div class="container" style="margin-top: -26px;">
+        <div class="card-group ml-3">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card mt-5" style="width: 18rem; background-color: deepskyblue;">
+                        <div class="card-body">
+                            <div class="embed">
+                                <iframe style="width: 17.9em; height: 12em; margin-left: -1.2em;" class="embed-item" src="https://www.youtube.com/embed/SzXNNhVYeYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                            <h6 class="card-title text-white font-weight-bold" style="font-size: 1.1em">Mulheres contam a experiência de superar o câncer de ovário</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card mt-5" style="width: 18rem; background-color: deepskyblue;">
+                        <div class="card-body">
+                            <div class="embed">
+                                <iframe style="width: 17.9em; height: 12em; margin-left: -1.2em;" class="embed-item" src="https://www.youtube.com/embed/kbWMY-LMfK8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                            <h6 class="card-title text-white font-weight-bold" style="font-size: 1em">Apoio é fundamental para superar problemas causados pela hidradenite supurativa</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card mt-5" style="width: 18rem; background-color: deepskyblue;">
+                        <div class="card-body">
+                            <div class="embed">
+                                <iframe style="width: 17.9em; height: 12em; margin-left: -1.2em;" class="embed-item" src="https://www.youtube.com/embed/vB-V9NSHptg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                            <h6 class="card-title text-white font-weight-bold" style="font-size: 1.1em">Artrite reumatoide: entenda por que o exame é importante</h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <p class="card-text" style="font-size: 40px; color: #686868; margin-left: 23.5%; margin-top: 30px;">Destaques de saúde </p>
+
+    <div class="container" style="margin-top: -26px;">
+        <div class="card-group ml-3">
+            <div class="row">
+
+                <div class="col-8">
+                    <div class="card" id="cardEspecial">
+                        <div class="card-body">
+                            <a href="#" title="Ressaca: por que acontece, sintomas e como curar?">
+                                <img data-src="https://images1.minhavida.com.br/imagensconteudo/33717/ressaca-_33717_78_78.jpg" alt="Ressaca: por que acontece, sintomas e como curar? " src="https://images1.minhavida.com.br/imagensconteudo/33717/ressaca-_33717_78_78.jpg" class="lazy-loaded">
+                            </a>
+                            <div class="card-body corpoEspecial">
+                                <h2>
+                                    <a href="#" title="Ressaca: por que acontece, sintomas e como curar? ">
+                                        <p style="font-size: 20px">Ressaca: por que acontece, sintomas e como curar?</p>
+                                    </a>
+                                </h2>
+
+                            </div>
+                            <p class="intro-artigo">
+                                Veja como evitar e dicas para curar a ressaca!
+                            </p>
+
+                            <a href="#" title="Mulher morre após anunciar que teria poucos dias de vida e deixa livro de lembranças para filho ">
+                                <img data-src="https://images1.minhavida.com.br/imagensconteudo/33712/Minha%20Vida%20-%20Apresentadora%20da%20BBC%20(imagem%20fora)_33712_78_78.jpg" alt="Mulher morre após anunciar que teria poucos dias de vida e deixa livro de lembranças para filho " src="https://images1.minhavida.com.br/imagensconteudo/33712/Minha%20Vida%20-%20Apresentadora%20da%20BBC%20(imagem%20fora)_33712_78_78.jpg" class="lazy-loaded">
+                            </a>
+                            <div class="card-body corpoEspecial">
+                                <h2>
+                                    <a href="#" title="Mulher morre após anunciar que teria poucos dias de vida e deixa livro de lembranças para filho ">
+                                        <p style="font-size: 20px">Mulher morre após anunciar que teria poucos dias de vida e deixa livro de lembranças para filho</p>
+                                    </a>
+                                </h2>
+
+                            </div>
+                            <p class="intro-artigo">
+                                Rachael Bland, apresentadora da BBC, deixou cartas, fotos e gravações de áudio para o filho de três anos
+                            </p>
+
+                            <a href="#" title="Beatriz Segall, a Odete Roitman de &quot;Vale Tudo&quot;, morre aos 92 anos ">
+                                <img data-src="https://images1.minhavida.com.br/imagensconteudo/33711/Odete_33711_78_78.jpg" alt="Beatriz Segall, a Odete Roitman de &quot;Vale Tudo&quot;, morre aos 92 anos " src="https://images1.minhavida.com.br/imagensconteudo/33711/Odete_33711_78_78.jpg" class="lazy-loaded">
+                            </a>
+                            <div class="card-body corpoEspecial">
+                                <h2>
+                                    <a href="#" title="Beatriz Segall, a Odete Roitman de &quot;Vale Tudo&quot;, morre aos 92 anos ">
+                                        <p style="font-size: 20px">Beatriz Segall, a Odete Roitman de "Vale Tudo", morre aos 92 anos</p>
+                                    </a>
+                                </h2>
+                            </div>
+                            <p class="intro-artigo">
+                                A causa da morte não foi revelada, mas a atriz já havia sido internada com problemas respiratórios
+                            </p>
+
+                            <a href="#" title="Ana Furtado conta como lida com a dor e tristeza durante o tratamento contra câncer">
+                                <img data-src="https://images1.minhavida.com.br/imagensconteudo/33708/ana-furtado-_33708_78_78.jpg" alt="Ana Furtado conta como lida com a dor e tristeza durante o tratamento contra câncer" src="https://images1.minhavida.com.br/imagensconteudo/33708/ana-furtado-_33708_78_78.jpg" class="lazy-loaded">
+                            </a>
+                            <div class="card-body corpoEspecial">
+                                <h2>
+                                    <a href="#" title="Ana Furtado conta como lida com a dor e tristeza durante o tratamento contra câncer">
+                                        <p style="font-size: 20px">Ana Furtado conta como lida com a dor e tristeza durante o tratamento contra câncer</p>
+                                    </a>
+                                </h2>
+                            </div>
+                            <p class="intro-artigo">
+                                A apresentadora revelou que se deixar sentir esses sentimentos e procura viver um dia de cada vez
+                            </p>
+
+                            <a href="#" title="Claire Wineland, youtuber que sofria com fibrose cística, morre aos 21 anos">
+                                <img data-src="https://images1.minhavida.com.br/imagensconteudo/33706/Minha%20vida%20Claire%201%20(imagem%20fora)_33706_78_78.jpg" alt="Claire Wineland, youtuber que sofria com fibrose cística, morre aos 21 anos" src="https://images1.minhavida.com.br/imagensconteudo/33706/Minha%20vida%20Claire%201%20(imagem%20fora)_33706_78_78.jpg" class="lazy-loaded">
+                            </a>
+                            <div class="card-body corpoEspecial">
+                                <h2>
+                                    <a href="#" title="Claire Wineland, youtuber que sofria com fibrose cística, morre aos 21 anos">
+                                        <p style="font-size: 20px">Claire Wineland, youtuber que sofria com fibrose cística, morre aos 21 anos</p>
+                                    </a>
+                                </h2>
+                            </div>
+                            <p class="intro-artigo">
+                                A jovem compartilhava sua luta contra a doença nas redes sociais
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card" id="cardEspecial2">
+                        <div class="card-body">
+                            <h5 style="color: #b9bbbe; margin-bottom: 1em">CONTEÚDOS QUE + AJUDARAM </h5>
+
+
+                            <img class="pull-left" src="https://images1.minhavida.com.br/imagensconteudo/11730/casall_11730_78_78.jpg" title="Oito benefícios do sexo para a saúde" alt="Oito benefícios do sexo para a saúde">
+                            <div class="card-body corpoEspecial2">
+                                <a href="#">
+                                    <span >Oito benefícios do sexo para a saúde</span>
+                                </a>
+                            </div>
+                            <br>
+
+                            <img class="pull-left" src="https://images1.minhavida.com.br/imagensconteudo/16356/camisinha%20jeans_16356_78_78.jpg" title="Sexo anal: tire suas dúvidas sobre o assunto" alt="Sexo anal: tire suas dúvidas sobre o assunto">
+                            <div class="card-body corpoEspecial2">
+                                <a href="#">
+                                    <span >Sexo anal: tire suas dúvidas sobre o assunto</span>
+                                </a>
+                            </div>
+
+                            <img class="pull-left" src="https://images1.minhavida.com.br/imagensconteudo/1610/pressaoalta_1610_78_78.jpg" title="Pressão alta: siga 10 passos para controlar o sintoma" alt="Pressão alta: siga 10 passos para controlar o sintoma">
+                            <div class="card-body corpoEspecial2">
+                                <a href="#">
+                                    <span >Pressão alta: siga 10 passos para controlar o sintoma</span>
+                                </a>
+                            </div>
+
+                            <img class="pull-left" src="https://images1.minhavida.com.br/imagensconteudo/15762/casal-cama_15762_78_78.jpg" title="Você sabe praticar sexo oral seguro?" alt="Você sabe praticar sexo oral seguro?">
+                            <div class="card-body corpoEspecial2">
+                                <a href="#">
+                                    <span >Você sabe praticar sexo oral seguro?</span>
+                                </a>
+                            </div>
+                            <br>
+
+                            <img class="pull-left" src="https://images1.minhavida.com.br/imagensconteudo/3622/dor-peito_3622_78_78.jpg" title="Sintomas de infarto: dor no peito não é único sinal" alt="Sintomas de infarto: dor no peito não é único sinal">
+                            <div class="card-body corpoEspecial2">
+                                <a href="#">
+                                    <span >Sintomas de infarto: dor no peito não é único sinal</span>
+                                </a>
+                            </div>
+
+                            <img class="pull-left" src="https://images1.minhavida.com.br/imagensconteudo/12814/vacinaadultos_12814_78_78.jpg" title="Sete vacinas que os adultos precisam tomar" alt="Sete vacinas que os adultos precisam tomar">
+                            <div class="card-body corpoEspecial2">
+                                <a href="#">
+                                    <span >Sete vacinas que os adultos precisam tomar</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="bg-almost">
+        <div class="container">
+            <div class="links-footer text-center mt-4" style="font-size: 16px; color: #b9bbbe">
+                <span>Mais do Minha Vida: </span>
+                <a href="#" title="Alzheimer">Alzheimer</a>
+                <span> • </span>
+                <a href="#" title="Anemia">Anemia</a>
+                <span> • </span>
+                <a href="#" title="Asma">Asma</a>
+                <span> • </span>
+                <a href="#" title="Asma grave">Asma grave</a>
+                <span> • </span>
+                <a href="#" title="Berberina">Berberina</a>
+                <span> • </span>
+                <a href="#" title="Bicarbonato de Sódio">Bicarbonato de Sódio</a>
+                <span> • </span>
+                <a href="#" title="Bula do Azitromicina">Bula do Azitromicina</a>
+                <span> • </span>
+                <a href="#" title="Bula do Bi-profenid">Bula do Bi-profenid</a>
+                <span> • </span>
+                <a href="#" title="Bula do Ciprofloxacino ">Bula do Ciprofloxacino </a>
+                <span> • </span>
+                <a href="#" title="Bula do Fluconazol">Bula do Fluconazol</a>
+                <span> • </span>
+                <a href="#" title="Bula do Ibuprofeno">Bula do Ibuprofeno</a>
+                <span> • </span>
+                <a href="#" title="Bula do Nimesulida">Bula do Nimesulida</a>
+                <span> • </span>
+                <a href="#" title="Bula do Toragesic">Bula do Toragesic</a>
+                <span> • </span>
+                <a href="#" title="Bula do Transamin">Bula do Transamin</a>
+                <span> • </span>
+                <a href="#" title="Calcanhar de maracujá">Calcanhar de maracujá</a>
+                <span> • </span>
+                <a href="#" title="Câncer de mama">Câncer de mama</a>
+                <span> • </span>
+                <a href="#" title="Candidíase">Candidíase</a>
+                <span> • </span>
+                <a href="#" title="Candidíase no Homem">Candidíase no Homem</a>
+                <span> • </span>
+                <a href="#" title="Carvão ativado ">Carvão ativado </a>
+                <span> • </span>
+                <a href="#" title="Chá de Hibisco">Chá de Hibisco</a>
+                <span> • </span>
+                <a href="#" title="Chá de Hibisco">Chá de Hibisco</a>
+                <span> • </span>
+                <a href="#" title="Colesterol">Colesterol</a>
+                <span> • </span>
+                <a href="#" title="Conjuntivite">Conjuntivite</a>
+                <span> • </span>
+                <a href="#" title="Dengue">Dengue</a>
+                <span> • </span>
+                <a href="#" title="Depressão">Depressão</a>
+                <span> • </span>
+                <a href="#" title="Dieta Cetogênica">Dieta Cetogênica</a>
+                <span> • </span>
+                <a href="#" title="Dieta do Ovo">Dieta do Ovo</a>
+                <span> • </span>
+                <a href="#" title="Dieta Dukan">Dieta Dukan</a>
+                <span> • </span>
+                <a href="#" title="Dieta Low Carb">Dieta Low Carb</a>
+                <span> • </span>
+                <a href="#" title="Dieta sem glúten">Dieta sem glúten</a>
+                <span> • </span>
+                <a href="#" title="Dietas para emagrecer">Dietas para emagrecer</a>
+                <span> • </span>
+                <a href="#" title="DIU">DIU</a>
+                <span> • </span>
+                <a href="#" title="DIU">DIU</a>
+                <span> • </span>
+                <a href="#" title="Dor nas Costas">Dor nas Costas</a>
+                <span> • </span>
+                <a href="#" title="Emagrecer">Emagrecer</a>
+                <span> • </span>
+                <a href="#" title="Enxaqueca">Enxaqueca</a>
+                <span> • </span>
+                <a href="#" title="Febre Amarela">Febre Amarela</a>
+                <span> • </span>
+                <a href="#" title="Febre Chikungunya">Febre Chikungunya</a>
+                <span> • </span>
+                <a href="#" title="Febre Mayaro">Febre Mayaro</a>
+                <span> • </span>
+                <a href="#" title="Febre Oropouche">Febre Oropouche</a>
+                <span> • </span>
+                <a href="#" title="Gonorreia">Gonorreia</a>
+                <span> • </span>
+                <a href="#" title="Hemorroida">Hemorroida</a>
+                <span> • </span>
+                <a href="#" title="Hipertireoidismo">Hipertireoidismo</a>
+                <span> • </span>
+                <a href="#" title="HPV">HPV</a>
+                <span> • </span>
+                <a href="#" title="Jejum intermitente">Jejum intermitente</a>
+                <span> • </span>
+                <a href="#" title="Mau Hálito">Mau Hálito</a>
+                <span> • </span>
+                <a href="#" title="Melasma">Melasma</a>
+                <span> • </span>
+                <a href="#" title="Microcefalia">Microcefalia</a>
+                <span> • </span>
+                <a href="#" title="Morte Cerebral">Morte Cerebral</a>
+                <span> • </span>
+                <a href="#" title="Pílula do dia seguinte">Pílula do dia seguinte</a>
+                <span> • </span>
+                <a href="#" title="Remédio caseiro para dor de dente">Remédio caseiro para dor de dente</a>
+                <span> • </span>
+                <a href="#" title="Rinite">Rinite</a>
+                <span> • </span>
+                <a href="#" title="Rinite">Rinite</a>
+                <span> • </span>
+                <a href="#" title="Sífilis">Sífilis</a>
+                <span> • </span>
+                <a href="#" title="Sintomas de dengue">Sintomas de dengue</a>
+                <span> • </span>
+                <a href="#" title="Sintomas de gravidez">Sintomas de gravidez</a>
+                <span> • </span>
+                <a href="#" title="Sintomas de Virose">Sintomas de Virose</a>
+                <span> • </span>
+                <a href="#" title="Terçol">Terçol</a>
+                <span> • </span>
+                <a href="#" title="Transmissão da dengue">Transmissão da dengue</a>
+                <span> • </span>
+                <a href="#" title="Tratamento de Virose">Tratamento de Virose</a>
+                <span> • </span>
+                <a href="#" title="Vacina contra febre amarela">Vacina contra febre amarela</a>
+                <span> • </span>
+                <a href="#" title="Verrugas">Verrugas</a>
+                <span> • </span>
+                <a href="#" title="Zika Vírus">Zika Vírus</a>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <span class="font-weight-bold" style="color: #686868; font-size: 20px;">Viva mais e melhor: siga o Minha Vida</span>
+
+            <a class="mx-1" href="#" target="_blank"><img src="images/fcbk.png" alt="Facebook"></a>
+            <a class="mx-1" href="#" target="_blank"><img src="images/google.png" alt="Google+"></a>
+            <a class="mx-1" href="#" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a class="mx-1" href="#" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a class="mx-1" href="#" target="_blank"><img src="images/linkedin.png" alt="Linkedin"></a>
+
+        </div>
+
+        <div class="bg-almost2">
+            <div class="container" style="margin-top: 0.8em">
+                <a href="#" title="Home" style="color: white; font-weight: bold; margin-right: 1em">Home</a>
+                <a href="#" title="Quem somos" style="color: white; font-weight: bold; margin-right: 1em">Quem somos</a>
+                <a href="#" title="Políticas" style="color: white; font-weight: bold; margin-right: 1em">Políticas</a>
+                <a href="#" title="Trabalhe Conosco" style="color: white; font-weight: bold; margin-right: 1em">Trabalhe Conosco</a>
+                <a href="#" title="Anuncie" style="color: white; font-weight: bold; margin-right: 1em">Anuncie</a>
+                <a href="#" title="Fale Conosco" style="color: white; font-weight: bold; margin-right: 1em">Fale Conosco</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="foto-medicos"></div>
+
+<div class="container">
+    <div class="list-group" id="minhalista" style="margin-left: 47em; margin-top: 11.4em">
+
+        <a href="#" class="list-group-item list-group-item-action active">
+            Saúde de A a Z
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">Aids</a>
+        <a href="#" class="list-group-item list-group-item-action">Anemia</a>
+        <a href="#" class="list-group-item list-group-item-action">Ansiedade</a>
+        <a href="#" class="list-group-item list-group-item-action">Apendicite</a>
+        <a href="#" class="list-group-item list-group-item-action">Candidíase</a>
+        <a href="#" class="list-group-item list-group-item-action">Colesterol</a>
+        <a href="#" class="list-group-item list-group-item-action">Conjuntivite</a>
+        <a href="#" class="list-group-item list-group-item-action">Dengue</a>
+        <a href="#" class="list-group-item list-group-item-action">Depressão</a>
+        <a href="#" class="list-group-item list-group-item-action">Diabetes</a>
+        <a href="#" class="list-group-item list-group-item-action">Distútbios da Tireóide</a>
+        <a href="#" class="list-group-item list-group-item-action">Diverticulite</a>
+
+    </div>
+</div>
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Bootstrap</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand ml-5 col-2" href="#" title="Minha Vida - Saúde, Alimentação e Bem-Estar">
+        <img src="https://images1.minhavida.com.br/Content/images/responsivo/logos/novo-logo-minhavida.png" class="img-responsive logo" alt="Minha vida - saúde, alimentação e bem-estar" id="minha-vida">
+    </a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbarColor02" style="">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary" ><a href="saude.html" style="color: white">saúde</a></button>
+                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu bg-primary">
+                        <a class="dropdown-item" href="#">Saúde de A a Z</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Bulas de A a Z</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Guia Dor nas Costas</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Guia da Saúde Bucal</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Guia convivendo com Artrite Psoriásica</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Guia das Doenças Inflamatórias Intestinais</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Especial Qualidade de Vida Medley</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Especial Autocuidado</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Especial Diarréia</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Só entre elas</a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success"><a href="alimentacao.html" style="color: white">alimentação</a></button>
+                    <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu bg-success">
+                        <a class="dropdown-item" href="#">Alimentação de A a Z</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Receitas</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Especial Vigor: É gostoso descobrir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">O poder das sementes</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger" ><a href="beleza.html" style="color: white">beleza</a></button>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu bg-danger">
+                        <a class="dropdown-item" href="#">Beleza de A a Z</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-warning">fitness</button>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-toolbar">família</button>
+                    <button type="button" class="btn btn-toolbar dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu ">
+                        <a class="dropdown-item" href="#">Especial Combate à Obesidade Infantil</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Especial Puberdade Precoce</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Guida da Cólica do Bebê</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-info">bem-estar</button>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search<span class="icon-search"></span>
+            </button>
+        </form>
+    </div>
+</nav>
+<!--
+<script>
+    function myFunction1() {
+        window.location.replace('saude.html');
+    }
+    function myFunction2() {
+        window.location.replace('alimentacao.html');
+    }
+    function myFunction3() {
+        window.location.replace('beleza.html');
+    }
+</script>
+-->
+
+<div class="bg-home3">
+    <div class="container">
+        <div class="breadcrumb" id="barra_beleza">
+            <li class="breadcrumb-item active" aria-current="page" id="item_barra">Beleza</li>
+        </div>
+
+        <div id="bomdiaecia3" class="carousel" data-ride="carousel" style="margin-left: 3.5em;">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-10" src="images/radiofrequência-_17099_250_375.jpg" alt="Primeiro slide">
+                    <div class="carousel-caption">
+                        <p>Radiofrequência: o que é, quando o tratamento é indicado e riscos</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-10" src="images/Minha%20Vida%20-%20Matizador_33699_250_375.jpg" alt="Segundo Slide">
+                    <div class="carousel-caption">
+                        <p>Matizador: para que serve, como usar e indicações</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-10" src="images/shutterstock_582264343_33698_250_375.jpg" alt="Terceiro Slide">
+                    <div class="carousel-caption">
+                        <p>Quadril "reto" pode ser remodelado com cirurgia plástica</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#bomdiaecia3" role="button" data-slide="prev" id="prev1">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#bomdiaecia3" role="button" data-slide="next" id="next1">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<div class="bg-mid2">
+    <div class="container">
+        <div class="card mt-4 ml-5" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title" id="card1">Pergunte ao Especialista</h5>
+                <p class="card-text">Suas dúvidas respondidas por especialistas em beleza</p>
+                <a href="#" class="btn btn-danger mb-2">Perguntar</a>
+                <img class="card-img-top" src="images/especialistas.png" alt="Card image cap">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card-group ml-3">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card mt-5" style="width: 18rem; background-color: #D66431">
+                        <div class="card-body">
+                            <h6 class="card-title text-white font-weight-bold">Avalie sua beleza</h6>
+                            <p class="card-text" style="font-size: 14px; color: white;">Descubra se você está cuidando bem do seu corpo e cabelos</p>
+
+                            <label  for="masculino" class="masculino">
+
+                                <input type="radio" value="m" id="masculino" name="s">
+                                Masculino
+                            </label>
+                            <label for="feminino" class="feminino">
+                                <input type="radio" value="f" id="feminino" name="s">
+                                Feminino
+                            </label>
+                            <a href="#" class="btn btn-danger mb-2">DESCOBRIR AGORA</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card mt-5" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #b9bbbe;">GUIAS E ESPECIAIS</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card mt-5" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title" id="card2">RECEBA GRÁTIS NO SEU EMAIL</h5>
+                            <p class="card-text">Nossas novidades de beleza</p>
+                            <input placeholder="seu nome" type="text" name="data" class="form-control mb-2" maxlength="10">
+                            <input placeholder="seu email" type="text" name="data" class="form-control mb-2" maxlength="10">
+                            <label class="masculino">
+                                Sexo:
+                                <input type="radio" value="m" id="masculino1" name="s">
+                                Masculino
+                            </label>
+                            <label class="feminino">
+                                <input type="radio" value="f" id="feminino2" name="s">
+                                Feminino
+                            </label>
+                            <a href="#" class="btn btn-danger mb-2">RECEBER</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="card-text" style="font-size: 40px; color: #686868; margin-left: 23.5%; margin-top: 30px;">Especialistas em beleza </p>
+
+    <div class="container" style="margin-top: -26px;">
+        <div class="card-group ml-3">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card mt-5" style="width: 18rem;">
+                        <div class="card-body">
+                            <a href="#" style="font-size: 18px; color: #D66431">3 segredos para deixar a plástica no rosto mais natural</a>
+                            <img class="card-img mt-5" src="images/foto7.png" alt="Card image 3" style="border-radius: 50%; width: 100px; height: 100px;">
+                            <p style="margin-top: -9em; margin-left: 11em; font-size: 10px; color: #686868;">ESCRITO POR</p>
+                            <div class="card-body" style="margin-top: -2.5em; margin-left: 5.5em;">
+                                <a href="#" class="font-weight-bold" style="font-size: 13px; color: #D66431;">
+                                    Dr. Marcelo Wulkan
+                                </a>
+                            </div>
+                            <p style="margin-top: -1.7em; margin-left: 9.8em; font-size: 11px;">CIRURGIA PLÁSTICA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card mt-5" style="width: 18rem;">
+                        <div class="card-body">
+                            <a href="#" style="font-size: 16px; color: #D66431">Cosméticos naturais podem substituir o uso de desodorantes?</a>
+                            <img class="card-img mt-5" src="images/foto8.png" alt="Card image 3" style="border-radius: 50%; width: 100px; height: 100px;">
+                            <p style="margin-top: -9em; margin-left: 11em; font-size: 10px; color: #686868;">ESCRITO POR</p>
+                            <div class="card-body" style="margin-top: -2.5em; margin-left: 5.5em;">
+                                <a href="#" class="font-weight-bold" style="font-size: 13px; color: #D66431;">
+                                    Dra. Bhertha Tamura
+                                </a>
+                            </div>
+                            <p style="margin-top: -1.7em; margin-left: 9.8em; font-size: 11px;">DERMATOLOGIA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card mt-5" style="width: 18rem;">
+                        <div class="card-body">
+                            <a href="#" style="font-size: 19px; color: #D66431">Celulite facial: conheça os sintomas e qual o melhor tratamento para o problema</a>
+                            <img class="card-img mt-5" src="images/foto9.png" alt="Card image 3" style="border-radius: 50%; width: 100px; height: 100px;">
+                            <p style="margin-top: -9em; margin-left: 11em; font-size: 10px; color: #686868;">ESCRITO POR</p>
+                            <div class="card-body" style="margin-top: -2.5em; margin-left: 5.5em;">
+                                <a href="#" class="font-weight-bold" style="font-size: 13px; color: #D66431;">
+                                    Dra. Emily Alvernaz
+                                </a>
+                            </div>
+                            <p style="margin-top: -1.7em; margin-left: 9.8em; font-size: 11px;">DERMATOLOGIA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="card-text" style="font-size: 40px; color: #686868; margin-left: 23.5%; margin-top: 30px;">TV Minha Vida </p>
+
+    <div class="container" style="margin-top: -26px;">
+        <div class="card-group ml-3">
+            <div class="row">
+                <div class="col-6">
+                    <div class="card mt-5" style="width: 18rem; background-color: #D66431;">
+                        <div class="card-body">
+                            <div class="embed">
+                                <iframe style="width: 17.9em; height: 12em; margin-left: -1.2em;" class="embed-item" src="https://www.youtube.com/embed/23QGLGQiV4w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                            <h6 class="card-title text-white font-weight-bold" style="font-size: 1.1em">6 passos infalíveis para ter cabelos mais fortes e bonitos</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="card mt-5" style="width: 18rem; background-color: #D66431;">
+                        <div class="card-body">
+                            <div class="embed">
+                                <iframe style="width: 17.9em; height: 12em; margin-left: -1.2em;" class="embed-item" src="https://www.youtube.com/embed/49XOcMHT_Kw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                            <h6 class="card-title text-white font-weight-bold" style="font-size: 1.1em">Aprenda a fazer um coque duplo em 5 minutos</h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <p class="card-text" style="font-size: 40px; color: #686868; margin-left: 23.5%; margin-top: 30px;">Destaques de beleza </p>
+
+    <div class="container" style="margin-top: -26px;">
+        <div class="card-group ml-3">
+            <div class="row">
+
+                <div class="col-8">
+                    <div class="card" id="cardEspecial">
+                        <div class="card-body">
+                            <a href="#" title="PMMA: entenda os prós e contras desse tipo de preenchimento">
+                                <img data-src="https://images1.minhavida.com.br/imagensconteudo/18267/preenchimento-facial_18267_78_78.jpg" alt="PMMA: entenda os prós e contras desse tipo de preenchimento" src="https://images1.minhavida.com.br/imagensconteudo/18267/preenchimento-facial_18267_78_78.jpg" class="lazy-loaded">
+                            </a>
+                            <div class="card-body corpoEspecial">
+                                <h2>
+                                    <a href="#" title="PMMA: entenda os prós e contras desse tipo de preenchimento">
+                                        <p style="font-size: 20px; color: #D66431">PMMA: entenda os prós e contras desse tipo de preenchimento</p>
+                                    </a>
+                                </h2>
+
+                            </div>
+                            <p class="intro-artigo">
+                                Aplicações em grandes quantidades aumentam os riscos de infeções e alergias
+                            </p>
+
+                            <a href="#" title="Bioplastia: conheça os riscos do preenchimento com PMMA">
+                                <img data-src="https://images1.minhavida.com.br/imagensconteudo/18264/preenchimento-labial-_18264_78_78.jpg" alt="Bioplastia: conheça os riscos do preenchimento com PMMA" src="https://images1.minhavida.com.br/imagensconteudo/18264/preenchimento-labial-_18264_78_78.jpg" class="lazy-loaded">
+                            </a>
+                            <div class="card-body corpoEspecial">
+                                <h2>
+                                    <a href="#" title="Bioplastia: conheça os riscos do preenchimento com PMMA">
+                                        <p style="font-size: 20px; color: #D66431">Bioplastia: conheça os riscos do preenchimento com PMMA</p>
+                                    </a>
+                                </h2>
+
+                            </div>
+                            <p class="intro-artigo">
+                                A técnica trata-se de um tratamento estético que pode causar sérias complicações
+                            </p>
+
+                            <a href="#" title="Joelma revela que usa óleo de coco para hidratar o cabelo">
+                                <img data-src="https://images1.minhavida.com.br/imagensconteudo/33683/joelma-_33683_78_78.jpg" alt="Joelma revela que usa óleo de coco para hidratar o cabelo " src="https://images1.minhavida.com.br/imagensconteudo/33683/joelma-_33683_78_78.jpg" class="lazy-loaded">
+                            </a>
+                            <div class="card-body corpoEspecial">
+                                <h2>
+                                    <a href="#" title="Joelma revela que usa óleo de coco para hidratar o cabelo">
+                                        <p style="font-size: 20px; color: #D66431">Joelma revela que usa óleo de coco para hidratar o cabelo, diz estudo</p>
+                                    </a>
+                                </h2>
+                            </div>
+                            <p class="intro-artigo">
+                                A cantora revelou também que não descolore os fios para evitar que eles fiquem quebradiços
+                            </p>
+
+                            <a href="#" title="Simone, dupla de Simaria, faz bronzeamento com biquíni de fita isolante">
+                                <img data-src="https://images1.minhavida.com.br/imagensconteudo/33665/Minha%20Vida%20-%20Simone%20bronzeamento_33665_78_78.jpg" alt="Simone, dupla de Simaria, faz bronzeamento com biquíni de fita isolante" src="https://images1.minhavida.com.br/imagensconteudo/33665/Minha%20Vida%20-%20Simone%20bronzeamento_33665_78_78.jpg" class="lazy-loaded">
+                            </a>
+                            <div class="card-body corpoEspecial">
+                                <h2>
+                                    <a href="#" title="Simone, dupla de Simaria, faz bronzeamento com biquíni de fita isolante">
+                                        <p style="font-size: 20px; color: #D66431">Simone, dupla de Simaria, faz bronzeamento com biquíni de fita isolante</p>
+                                    </a>
+                                </h2>
+                            </div>
+                            <p class="intro-artigo">
+                                Veja os riscos do bronzeamento inadequado e como usar o protetor solar a seu favor
+                            </p>
+
+                            <a href="#" title="Aos 17 anos, filha de Kelly Key faz preenchimento labial e facial">
+                                <img data-src="https://images1.minhavida.com.br/imagensconteudo/33654/Minha%20Vida%20-%20Antes%20e%20depois%20Suzanna%20Freitas_33654_78_78.jpg" alt="Aos 17 anos, filha de Kelly Key faz preenchimento labial e facial" src="https://images1.minhavida.com.br/imagensconteudo/33654/Minha%20Vida%20-%20Antes%20e%20depois%20Suzanna%20Freitas_33654_78_78.jpg" class="lazy-loaded">
+                            </a>
+                            <div class="card-body corpoEspecial">
+                                <h2>
+                                    <a href="#" title="Aos 17 anos, filha de Kelly Key faz preenchimento labial e facial">
+                                        <p style="font-size: 20px; color: #D66431">Aos 17 anos, filha de Kelly Key faz preenchimento labial e facial</p>
+                                    </a>
+                                </h2>
+                            </div>
+                            <p class="intro-artigo">
+                                A jovem pediu de presente de aniversário diversos procedimentos estéticos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card" id="cardEspecial2">
+                        <div class="card-body">
+                            <h5 style="color: #b9bbbe; margin-bottom: 1em">CONTEÚDOS QUE + AJUDARAM </h5>
+
+                            <img class="pull-left" src="https://images1.minhavida.com.br/imagensconteudo/12119/Chapinha_12119_78_78.jpg" title="12 erros que acabam com a beleza e saúde dos cabelos" alt="12 erros que acabam com a beleza e saúde dos cabelos">
+
+                            <div class="card-body corpoEspecial2">
+                                <a href="#" style="color: #D66431; font-size: 13px">
+                                    <span >12 erros que acabam com a beleza e saúde dos cabelos</span>
+                                </a>
+                            </div>
+                            <br>
+
+                            <img class="pull-left" src="https://images1.minhavida.com.br/imagensconteudo/12881/11quedadecabelo_12881_78_78.jpg" title="Queda de cabelo: 10 atitudes para fortalecer os fios e prevenir que eles caiam" alt="Queda de cabelo: 10 atitudes para fortalecer os fios e prevenir que eles caiam">
+
+                            <div class="card-body corpoEspecial2">
+                                <a href="#" style="color: #D66431; font-size: 13px">
+                                    <span >Queda de cabelo: 10 atitudes para fortalecer os fios e prevenir que eles caiam</span>
+                                </a>
+                            </div>
+
+                            <img class="pull-left" src="https://images1.minhavida.com.br/imagensconteudo/2098/88741_2098_78_78.jpg" title="Abandone oito hábitos que destroem o seu cabelo" alt="Abandone oito hábitos que destroem o seu cabelo">
+
+                            <div class="card-body corpoEspecial2">
+                                <a href="#" style="color: #D66431; font-size: 13px">
+                                    <span >Abandone oito hábitos que destroem o seu cabelo</span>
+                                </a>
+                            </div>
+
+                            <img class="pull-left" src="https://images1.minhavida.com.br/imagensconteudo/12883/cabelo%202_12883_78_78.jpg" title="Operação resgate: três jeitos muito fáceis de revitalizar os cabelos" alt="Operação resgate: três jeitos muito fáceis de revitalizar os cabelos">
+
+                            <div class="card-body corpoEspecial2">
+                                <a href="#" style="color: #D66431; font-size: 13px">
+                                    <span >Operação resgate: três jeitos de revitalizar os cabelos</span>
+                                </a>
+                            </div>
+                            <br>
+
+                            <img class="pull-left" src="https://images1.minhavida.com.br/imagensconteudo/12242/pele%20saud%c3%a1vel_12242_78_78.jpg" title="Abandone 10 hábitos que envelhecem a sua pele" alt="Abandone 10 hábitos que envelhecem a sua pele">
+
+                            <div class="card-body corpoEspecial2">
+                                <a href="#" style="color: #D66431; font-size: 13px">
+                                    <span >Abandone 10 hábitos que envelhecem a sua pele</span>
+                                </a>
+                            </div>
+
+                            <img data-bind="attr: { src: imagem, title: titulo, alt: titulo }" class="pull-left" src="https://images1.minhavida.com.br/imagensconteudo/11065/media_11065_78_78.jpg" title="Dicas para eliminar manchas escuras e irritações na virilha, axilas e coxas " alt="Dicas para eliminar manchas escuras e irritações na virilha, axilas e coxas ">
+
+                            <div class="card-body corpoEspecial2">
+                                <a href="#" style="color: #D66431; font-size: 13px">
+                                    <span >Dicas para eliminar manchas escuras e irritações na virilha, axilas e coxas</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="bg-almo2">
+        <div class="container">
+            <div class="links-footer text-center mt-4" style="font-size: 16px; color: #b9bbbe">
+                <span>Mais do Minha Vida: </span>
+                <a href="#" title="Berberina" style="color: #D66431">Berberina</a>
+                <span> • </span>
+                <a href="#" title="Bicarbonato de Sódio" style="color: #D66431">Bicarbonato de Sódio</a>
+                <span> • </span>
+                <a href="#" title="Blefaroplastia" style="color: #D66431">Blefaroplastia</a>
+                <span> • </span>
+                <a href="#" title="Bula do Azitromicina" style="color: #D66431">Bula do Azitromicina</a>
+                <span> • </span>
+                <a href="#" title="Bula do Bi-profenid" style="color: #D66431">Bula do Bi-profenid</a>
+                <span> • </span>
+                <a href="#" title="Bula do Ciprofloxacino " style="color: #D66431">Bula do Ciprofloxacino </a>
+                <span> • </span>
+                <a href="#" title="Bula do Fluconazol" style="color: #D66431">Bula do Fluconazol</a>
+                <span> • </span>
+                <a href="#" title="Bula do Ibuprofeno" style="color: #D66431">Bula do Ibuprofeno</a>
+                <span> • </span>
+                <a href="#" title="Bula do Nimesulida" style="color: #D66431">Bula do Nimesulida</a>
+                <span> • </span>
+                <a href="#" title="Bula do Toragesic" style="color: #D66431">Bula do Toragesic</a>
+                <span> • </span>
+                <a href="#" title="Bula do Transamin" style="color: #D66431">Bula do Transamin</a>
+                <span> • </span>
+                <a href="#" title="Candidíase" style="color: #D66431">Candidíase</a>
+                <span> • </span>
+                <a href="#" title="Carboxiterapia" style="color: #D66431">Carboxiterapia</a>
+                <span> • </span>
+                <a href="#" title="Carvão ativado " style="color: #D66431">Carvão ativado </a>
+                <span> • </span>
+                <a href="#" title="Chá de Hibisco" style="color: #D66431">Chá de Hibisco</a>
+                <span> • </span>
+                <a href="#" title="Criolipólise" style="color: #D66431">Criolipólise</a>
+                <span> • </span>
+                <a href="#" title="Depilação a laser" style="color: #D66431">Depilação a laser</a>
+                <span> • </span>
+                <a href="#" title="Dieta Cetogênica" style="color: #D66431">Dieta Cetogênica</a>
+                <span> • </span>
+                <a href="#" title="Dieta do Ovo" style="color: #D66431">Dieta do Ovo</a>
+                <span> • </span>
+                <a href="#" title="Dieta Dukan" style="color: #D66431">Dieta Dukan</a>
+                <span> • </span>
+                <a href="#" title="Dieta Low Carb" style="color: #D66431">Dieta Low Carb</a>
+                <span> • </span>
+                <a href="#" title="Dieta sem glúten" style="color: #D66431">Dieta sem glúten</a>
+                <span> • </span>
+                <a href="#" title="Dietas para emagrecer" style="color: #D66431">Dietas para emagrecer</a>
+                <span> • </span>
+                <a href="#" title="DIU" style="color: #D66431">DIU</a>
+                <span> • </span>
+                <a href="#" title="Emagrecer" style="color: #D66431">Emagrecer</a>
+                <span> • </span>
+                <a href="#" title="Febre Chikungunya" style="color: #D66431">Febre Chikungunya</a>
+                <span> • </span>
+                <a href="#" title="Febre Mayaro" style="color: #D66431">Febre Mayaro</a>
+                <span> • </span>
+                <a href="#" title="Febre Oropouche" style="color: #D66431">Febre Oropouche</a>
+                <span> • </span>
+                <a href="#" title="Fotodepilação" style="color: #D66431">Fotodepilação</a>
+                <span> • </span>
+                <a href="#" title="Graus de acne" style="color: #D66431">Graus de acne</a>
+                <span> • </span>
+                <a href="#" title="Hemorroida" style="color: #D66431">Hemorroida</a>
+                <span> • </span>
+                <a href="#" title="Jejum intermitente" style="color: #D66431">Jejum intermitente</a>
+                <span> • </span>
+                <a href="#" title="Jejum intermitente" style="color: #D66431">Jejum intermitente</a>
+                <span> • </span>
+                <a href="#" title="Limpeza de pele" style="color: #D66431">Limpeza de pele</a>
+                <span> • </span>
+                <a href="#" title="Lipoaspiração" style="color: #D66431">Lipoaspiração</a>
+                <span> • </span>
+                <a href="#" title="Lipoescultura" style="color: #D66431">Lipoescultura</a>
+                <span> • </span>
+                <a href="#" title="Mau Hálito" style="color: #D66431">Mau Hálito</a>
+                <span> • </span>
+                <a href="#" title="Micose" style="color: #D66431">Micose</a>
+                <span> • </span>
+                <a href="#" title="Microcefalia" style="color: #D66431">Microcefalia</a>
+                <span> • </span>
+                <a href="#" title="Peeling de diamante" style="color: #D66431">Peeling de diamante</a>
+                <span> • </span>
+                <a href="#" title="Radiofrequência" style="color: #D66431">Radiofrequência</a>
+                <span> • </span>
+                <a href="#" title="Rinite" style="color: #D66431">Rinite</a>
+                <span> • </span>
+                <a href="#" title="Rinoplastia" style="color: #D66431">Rinoplastia</a>
+                <span> • </span>
+                <a href="#" title="Silicone nas mamas" style="color: #D66431">Silicone nas mamas</a>
+                <span> • </span>
+                <a href="#" title="Sintomas de gravidez" style="color: #D66431">Sintomas de gravidez</a>
+                <span> • </span>
+                <a href="#" title="Sintomas de Virose" style="color: #D66431">Sintomas de Virose</a>
+                <span> • </span>
+                <a href="#" title="Terçol" style="color: #D66431">Terçol</a>
+                <span> • </span>
+                <a href="#" title="Transmissão da dengue" style="color: #D66431">Transmissão da dengue</a>
+                <span> • </span>
+                <a href="#" title="Tratamento de Virose" style="color: #D66431">Tratamento de Virose</a>
+                <span> • </span>
+                <a href="#" title="Tratamentos caseiros para estrias" style="color: #D66431">Tratamentos caseiros para estrias</a>
+                <span> • </span>
+                <a href="#" title="Vacina contra febre amarela" style="color: #D66431">Vacina contra febre amarela</a>
+                <span> • </span>
+                <a href="#" title="Zika Vírus" style="color: #D66431">Zika Vírus</a>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <span class="font-weight-bold" style="color: #686868; font-size: 20px;">Viva mais e melhor: siga o Minha Vida</span>
+
+            <a class="mx-1" href="#" target="_blank"><img src="images/fcbk.png" alt="Facebook"></a>
+            <a class="mx-1" href="#" target="_blank"><img src="images/google.png" alt="Google+"></a>
+            <a class="mx-1" href="#" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a class="mx-1" href="#" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a class="mx-1" href="#" target="_blank"><img src="images/linkedin.png" alt="Linkedin"></a>
+
+        </div>
+
+        <div class="bg-almost2">
+            <div class="container" style="margin-top: 0.8em">
+                <a href="#" title="Home" style="color: white; font-weight: bold; margin-right: 1em">Home</a>
+                <a href="#" title="Quem somos" style="color: white; font-weight: bold; margin-right: 1em">Quem somos</a>
+                <a href="#" title="Políticas" style="color: white; font-weight: bold; margin-right: 1em">Políticas</a>
+                <a href="#" title="Trabalhe Conosco" style="color: white; font-weight: bold; margin-right: 1em">Trabalhe Conosco</a>
+                <a href="#" title="Anuncie" style="color: white; font-weight: bold; margin-right: 1em">Anuncie</a>
+                <a href="#" title="Fale Conosco" style="color: white; font-weight: bold; margin-right: 1em">Fale Conosco</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="foto-medicos"></div>
+
+<div class="container">
+    <div class="list-group" id="minhalista" style="margin-left: 47em; margin-top: 11.4em">
+
+        <a href="#" class="list-group-item list-group-item-action active" style="background-color: #D66431">
+            Alimentação de A a Z
+        </a>
+        <a href="#" class="list-group-item list-group-item-action" style="color: #D66431">Abdominoplastia</a>
+        <a href="#" class="list-group-item list-group-item-action" style="color: #D66431">Ácido Hialurônico</a>
+        <a href="#" class="list-group-item list-group-item-action" style="color: #D66431">Ácido Retinóico</a>
+        <a href="#" class="list-group-item list-group-item-action" style="color: #D66431">Blefaroplastia</a>
+        <a href="#" class="list-group-item list-group-item-action" style="color: #D66431">Body Lift</a>
+        <a href="#" class="list-group-item list-group-item-action" style="color: #D66431">Botox</a>
+        <a href="#" class="list-group-item list-group-item-action" style="color: #D66431">Carboxiterapia</a>
+        <a href="#" class="list-group-item list-group-item-action" style="color: #D66431">Cauterização Capilar</a>
+        <a href="#" class="list-group-item list-group-item-action" style="color: #D66431">Cirurgia de Ginecomastia</a>
+        <a href="#" class="list-group-item list-group-item-action" style="color: #D66431">Criolipólise</a>
+        <a href="#" class="list-group-item list-group-item-action" style="color: #D66431">Depilação a Laser</a>
+        <a href="#" class="list-group-item list-group-item-action" style="color: #D66431">Descoloração dos Cabelos</a>
+
+    </div>
+</div>
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
