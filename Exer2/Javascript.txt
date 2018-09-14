@@ -1,0 +1,35 @@
+O que é JavaScript
+==================
+
+- Resumidamente, uma linguagem de scripting que nos permite escrever código que é executado no
+  browser e que nos permite mudar o HTML e o CSS do documento corrente aumentando a interatividade
+  do usuário com este documento.
+
+- Javascript segue a especificação padrão ECMAScript, uma especificação que os browsers seguem
+  para construir suas implementações de Javascript.
+
+- ECMAScript 2015 é o novo nome para ECMAScript 6 ou ES6.
+- Atualmente ECMAScript 5.1 de 2011 ainda é o padrão mas está bastante obsoleta.
+- ECMAScript 2015 ou ES6 está surgindo como o novo padrão mas atualmente é apenas parcialmente
+  suportada pelos browsers. Para que seu código rode em qq browser é preciso utilizar um
+  transpiler que traduza seu código para a versão de Javascript que você deseja.
+- Browsers que oferecem suporte parcial do ES6: Chrome, Firefox, Edge, Safari e Opera
+- Atualmente ECMAScript 2016 ou ES7 está em desenvolvimento e é pouco suportada pelos browsers.
+
+- Typescript é uma linguagem tipada definida pela Microsoft que permite que se escreva código
+  typescript que é convertido em código Javascript na versão escolhida pelo programador. Então,
+  quando a especificação ES6 estiver pronta as pessoas já estarão programando utilizando ES7,
+  através do uso de um transpiler, podendo assim utilizar as novas características definidas no
+  ES7.
+
+- jQuery - A biblioteca Javascript utilizada em mais de 95% dos sites do mundo.
+
+- Angular, React.js, Vue.js, Ember.js, Meteor.js - front end applications framework para
+  facilitar o desenvolvimento de aplicações para a web mais interativas. A execução destes
+  frameworks ocorre no cliente (browser).
+
+- Tecnologias tradicionais como DJango geram as páginas no servidor e as enviam para o browser.
+  A execução de frameworks como o Django, PHP, .NET, Ruby on Rails, Grails, Spring MVC e etc,
+  ocorre no servidor.
+
+- NodeJS: Para que se possa executar código javascript no servidor.
