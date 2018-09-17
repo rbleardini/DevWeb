@@ -1,0 +1,26 @@
+
+                                     DOM   Tree
+                                     ==========
+
+                                      document
+                                      /      \
+                                     /        \
+                                    /          \
+                                 head           body
+                                 / | \          / | \
+                                /  |  \        /  |  \
+                            meta title link   /   |   \
+                                             /    |    \
+                                         header  main  footer
+                                            |
+                                            |
+                                           nav
+                                            |
+                                            |
+                                            ul
+                                          / | \
+                                         /  |  \
+                                       li   li  li
+                                        |   |   |
+                                        |   |   |
+                                        a   a   a

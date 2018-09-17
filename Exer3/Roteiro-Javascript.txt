@@ -1,0 +1,77 @@
+1. Criar uma div com a classe container
+
+2. Criar um elemento h4 com o texto "Dados Pessoais" centralizado e com uma margem superior de 24 pixels.
+
+3. Criar um elemento form
+
+4. Criar uma div com a classe form-group para o campo nome
+   4.1 Criar um label para o campo nome com a classe form-control
+   4.2 Criar um elemento input para o campo nome
+   4.3 criar uma div (inicialmente invisível) com a classe invalid-feedback  e com o texto "Campo de preechimento obrigatório".
+
+5. Criar uma div com a classe form-group para o campo email
+   5.1 Criar um label para o campo email
+   5.2 Criar um elemento input para o campo email com a classe form-control
+   5.3 criar uma div (inicialmente invisível) com a classe invalid-feedback  e com o texto "Campo de preechimento obrigatório".
+
+6. Criar uma div com a classe form-group para o campo faixaEtaria
+
+   6.1 Criar um label para o campo faixaEtaria
+   6.2 Criar um elemento select com a classe custom-select para o campo faixaEtaria
+   6.3 Criar os elementos option com os textos abaixo:
+       - ... Escolha uma Opção ...
+       - Até 30 anos
+       - De 31 a 40 anos
+       - de 41 a 50 anos
+       - Acima de 50 anos
+   6.4 criar uma div (inicialmente invisível) com a classe invalid-feedback  e com o texto "Campo de preechimento obrigatório".
+
+6. Criar uma div para o label do campo Sexo, com uma margem superior de 16 pixels e com uma margem inferior de 4 pixels
+   6.1 Criar uma div para o botão de rádio Masculino com a classe form-check
+       6.1.1 Criar um elemento input para o botão de rádio Masculino com a classe form-check-input
+       6.1.2 Criar um elemento label com a classe form-check-label para o botão Masculino
+   6.2 Criar uma div para o botão de rádio Feminino com a classe form-check
+       6.2.1 Criar um elemento input para o botão de rádio Feminino com a classe form-check-input
+       6.2.2 Criar um elemento label com a classe form-check-label para o botão Feminino
+       6.2.3 Criar uma div com a classe invalid-feedback, com margem inferior zero e invisível para exibir a mensagem
+             de erro "Campo de preenchimento obrigatório".
+
+7. Criar uma div para o label do campo Preferências, com uma margem superior de 16 pixels e com uma margem inferior de 4 pixels
+   7.1 Criar uma div para o checkbox Esportes com as classes form-group e form-check e com uma margem inferior de 3px;
+       7.1.1 Criar um elemento input para o checkbox Esporte com as classes form-check-input e checkbox
+       7.1.2 Criar um elemento label com a classe form-check-label para Esportes
+   7.2 Criar uma div para o checkbox Cinema com as classes form-group e form-check e com uma margem inferior de 3px;
+       7.2.1 Criar um elemento input para o checkbox Cinema com as classes form-check-input e checkbox
+       7.2.2 Criar um elemento label com a classe form-check-label para Esportes
+   7.3 Criar uma div para o checkbox Literatura com as classes form-group e form-check e com uma margem inferior de 3px;
+       7.3.1 Criar um elemento input para o checkbox Literatura com as classes form-check-input e checkbox
+       7.3.2 Criar um elemento label com a classe form-check-label para Literatura
+       7.3.3 Criar uma div com a classe invalid-feedback, com margem inferior zero e invisível para exibir a mensagem
+             de erro "Uma ou mais preferências deve ser selecionada".
+
+8. Criar um botão Enviar para submeter o form acima
+   - Esse botão deve possuir as classes btn-primary, pl-4, pr-4, mt-2 e mb-5
+
+9. Criar event listeners para os campos nome, email, faixaEtaria, masculino, feminino, esporte, cinema e literatura
+
+10. Criar um event listener para o botão Enviar que manda validar todos os campos.
+
+11. Criar a função validaNomeFunction()
+
+12. Criar a função validateEmail() conforme vem abaixo:
+
+    function emailValido(email) {
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
+
+13. Criar a função validaEmailFunction() que deve validar se ele foi informado e se está de acordo com a expressão
+    regular acima.
+
+14. Criar a função função validaFaixaEtariaFunction()
+
+15. Criar a função validaSexoFunction()
+
+16. Criar a função validaPreferenciasFunction()
+
+17. Criar a função validaFunction(e) que manda validar todos os campos.
