@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Trab4</title>
+</head>
+<body>
+
+<h1 class="text-center mt-4"> Trabalho com jQuery</h1>
+
+<div class="container mt-4">
+    <form id="formulario" action="#" method="get" novalidate>
+
+        <div class="form-group row">
+            <label id="label_id_nome" for="id_nome" class="col-2 col-form-label"><strong>Nome</strong></label>
+            <div class="col-10">
+                <input id="id_nome" type="text" class="form-control" name="nome" placeholder="Nome" required >
+            </div>
+            <!--<div id="idNomeRequired" class="invalid-feedback d-none">Campo de preenchimento obrigatório</div>-->
+        </div>
+
+        <div class="form-group row">
+            <label for="id_nome" class="col-2 col-form-label"><strong></strong></label>
+            <div class="col-10">
+                <button type="submit" class="btn btn-primary"><i class="fa fa-download mr-1"></i>Enviar</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+<div class="container mt-4">
+    <div class="row">
+
+        <div class="col">
+
+            <h3>Lista 1</h3>
+
+            <table class="table table-bordered" id="lista1">
+
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Operação</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Roberto Arruda</td>
+                        <td><button type="button" class="btn btn-primary btn1">Mover</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Carlos Nogueira</td>
+                        <td><button type="button" class="btn btn-primary btn1">Mover</button></td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <div class="col">
+
+            <h3>Lista 2</h3>
+
+            <table class="table table-bordered" id="lista2">
+
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Operação</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Joana Arnaldo</td>
+                        <td><button type="button" class="btn btn-primary btn2">Remover</button></td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/masked-input-plugin.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+
+<script>
+
+    $( function()
+    {
+
+        $("#id_nome").on("input",validaNomeFunction);
+        $("#id_nome").focus(function() { validaNomeFunction(); });
+
+        $("#lista1").on("click",".btn1",function () {
+            var item = $(this).closest("tr")
+            adicionar_lista2(item); });
+
+        $("#lista2").on("click",".btn2",function () {
+            var item = $(this).closest("tr")
+            remover_lista2(item); });
+
+    });
+
+    $("#formulario").submit(function(e)
+    {
+
+        e.preventDefault();
+        let nomeValido = validaNomeFunction();
+        if (nomeValido) {
+            $("#formulario")[0].reset()
+            adicionar_lista1(nomeValido)
+        }
+
+    });
+
+    function validaNomeFunction()
+    {
+
+        let nome = $("#id_nome");
+        if (nome.val() === '') {
+            nome.addClass('is-invalid');
+            $("#label_id_nome").addClass('text-danger');
+            return false;
+        }
+
+        else {
+            nome.removeClass('is-invalid');
+            $("#label_id_nome").removeClass('text-danger');
+            return nome.val();
+        }
+
+    }
+
+    function adicionar_lista1(nome)
+    {
+        let itemHTML = "<tr><td>" + nome + "</td><td><button type=\"button\" class=\"btn btn-primary btn1\">Mover</button></td></tr>"
+        $('#lista1 tr:last').after(itemHTML);
+        $('#lista1 tr:last').hide().fadeIn();
+    }
+
+    function adicionar_lista2(item)
+    {
+
+        var nome = item.find('td:first').text();
+        item.fadeOut(function(){
+            item.remove();
+        })
+
+        let itemHTML = "<tr><td>" + nome + "</td><td><button type=\"button\" class=\"btn btn-primary btn2\">Remover</button></td></tr>"
+        $('#lista2 tr:last').after(itemHTML);
+        $('#lista2 tr:last').hide().fadeIn();
+
+    }
+
+    function remover_lista2(item)
+    {
+
+        var nome = item.find('td:first').text();
+        item.fadeOut(function(){
+            item.remove();
+        });
+
+    }
+
+</script>
+
+</body>
+</html>

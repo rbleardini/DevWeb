@@ -1,0 +1,11 @@
+{
+    "info":
+    {   "numero": "6",
+        "foto": "vinicius.png",
+        "nome": "Vinicius Aguiar Pereira",
+        "email": "viniciuspereira@gmail.com",
+        "faixaEtaria": "Até 30 Anos",
+        "sexo": "Masculino",
+        "salario": "9.999,00"
+    }
+}

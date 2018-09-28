@@ -1,0 +1,11 @@
+<tr style='display: none'>
+    <td width='0%' class='d-none'>6</td>
+    <td width='10%' class='text-center zoom'>
+        <img class='foto rounded-circle' src='images/pessoal/vinicius.png'>
+    </td>
+    <td width='25%' class='text-left'>Vinicius Aguiar Pereira</td>
+    <td width='25%' class='text-left email'>viniciuspereira@gmail.com</td>
+    <td width='15%' class='text-center'>Até 30 Anos</td>
+    <td width='12%' class='text-center'>Masculino</td>
+    <td width='13%' class='text-center'>9.800,00</td>
+</tr>

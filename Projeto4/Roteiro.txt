@@ -1,0 +1,406 @@
+1. Adicionar uma div com a classe container em torno do corpo do site (não deve incluir o menu e o rodapé).
+
+2. Acrescentar as classes navbar bg-light navbar-light ao elemento nav
+
+3. Criar a div que irá envolver os links do menu principal e adicionar a classe navbar-nav a esta div
+
+4. Adicionar as classes nav-item e nav-link a cada âncora.
+
+5. Adicionar a classe navbar-expand-md ao elemento nav
+
+6. Adicionar uma div com a classe container logo abaixo do elemento nav.
+
+7. Adicionar a classe active à âncora referente ao item de menu Home.
+
+8. Adicionar uma âncora com a classe navbar-brand e com o texto "Rio de Janeiro", logo abaixo da div com a classe container.
+
+9. Acrescentar a classe mr-auto à div com a classe navbar-nav.
+
+10. Podemos agora substituir o texto "Rio de Janeiro" por uma imagem adicionando o tag img:
+
+   <img src="images/logo.jpg" alt="logo" style="width: 50px;">
+
+11. Remover a entrada Home do menu.
+
+12. Acrescentar o elemento span a seguir, logo após a div com a classe navbar-nav:
+
+    <span class="navbar-text d-none d-xl-inline-block">As melhores excursões do Rio!</span>
+
+13. Remover o elemento <span> acrescentado no item 12 acima.
+
+14. Envolver a âncora relativa a cultura com a div abaixo:
+
+    <div class="dropdown">...</div>
+
+15. Acrescentar logo abaixo da âncora relativa a cultura a div abaixo:
+
+    <div class="dropdown-menu">...</div>
+
+16. Dentro da div acima, acrescentar as âncoras abaixo:
+
+    <a class="dropdown-item" href="#">Museus</a>
+    <a class="dropdown-item" href="#">Feiras</a>
+    <a class="dropdown-item" href="#">Bibliotecas</a>
+    <a class="dropdown-item" href="#">Livrarias</a>
+
+17. Acrescentar à âncora relativa a cultura a classe: dropdown-toggle e o atributo data-toggle com o valor dropdown.
+
+18. Comente o elamento img e acrescente o elemento header abaixo, logo após ao elemento <img> que foi comentado.
+
+    <header></header>
+
+    Acrescente a classe bgimage ao elemento <header> e remova o comentário referente à classe .bgimage no arquivo
+    css/styles.css.
+
+19. Acrescentar a classe fixed-top ao elemento nav.
+
+20. Acrescentar as classes e o estilo abaixo ao elemento header:
+
+    class="d-none d-md-block" style="margin-top: 55px;"
+
+21. E acrescentar a div abaixo logo após ao elemento header.
+
+    <div style="margin-top: 55px;" class="d-block d-md-none"></div>
+
+22. Envolver a div com a classe navbar-nav com a div abaixo:
+
+    <div class="collapse navbar-collapse" id="menu">...</div>
+
+23. Acrescentar o botão abaixo logo após a âncora com a classe navbar-brand:
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+24. Acrescentar o elemento <span> abaixo, após a paravra Mapas:
+
+    <span class="oi oi-globe"></span>
+
+25. Acrescentar uma div com a classe jumbotron envolvendo o elemento h2 e o parágrafo referente a marcos da cidade:
+
+    <div class="jumbotron">
+        ...
+    </div>
+
+26. Remover o comentário da classe jumbotron no arquivo styles.css:
+
+    .jumbotron {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+27. Acrescentar a div abaixo após a div referente aos marcos da cidade:
+
+    <div class="card-group">
+        <!-- Use card groups to render cards as a single, attached element with equal width and height columns. -->
+        <div class="card">
+            <img class="card-img-top rounded" src="...">
+            <div class="card-body">
+                <h4 class="card-title">...</h4>
+                <p class="card-text">...</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top rounded" src="...">
+            <div class="card-body">
+                <h4 class="card-title">...</h4>
+                <p class="card-text">...</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top rounded" src="...">
+            <div class="card-body">
+                <h4 class="card-title">...</h4>
+                <p class="card-text">...</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top rounded" src="...">
+            <div class="card-body">
+                <h4 class="card-title">...</h4>
+                <p class="card-text">...</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top rounded" src="...">
+            <div class="card-body">
+                <h4 class="card-title">...</h4>
+                <p class="card-text">...</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top rounded" src="...">
+            <div class="card-body">
+                <h4 class="card-title">...</h4>
+                <p class="card-text">...</p>
+            </div>
+        </div>
+    </div>
+
+28. Acrescentar a div abaixo em torno de cada um dos 6 cards:
+
+    <div class="col-lg-4 col-md-6">
+        ...
+    </div>
+
+29. Acrescentar a div row em torno do card-group:
+
+    <div class="row">
+       ...
+    </div>
+
+30. Acrescentar a classe mb-4 a cada div com a classe card:
+
+    <div class="card mb-4">
+       ...
+    </div>
+
+31. Acrescentar tooltip e popover
+
+    <a href="#" data-toggle="tooltip" data-placement="top" title="Tom Jobim: Copacabana, princesinha do mar Pelas manhãs tu és a vida a cantar E a tardinha o sol poente
+        Deixa sempre uma saudade na gente">"Princesinha do Mar"</a>
+
+    <a tabindex="0" data-trigger="focus"
+       data-toggle="popover"
+       data-title="007 contra o Foguete da Morte"
+       data-placement="bottom"
+       data-content="Filme franco-britânico de acção, aventura, espionagem e ficção científica de 1979, o 11.º da série
+       James Bond com Roger Moore no papel do agente secreto.">007 contra o Foguete da Morte.</a>
+
+32. Retire os comentários no arquivo js/script.js referentes a tooltip e popover.
+
+33. Acrescentar as linhas abaixo que implementam um accordion para cada uma das 3 excursões:
+
+    <h4 id="excursoes">Nossas Excursões</h4>
+
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <button class="btn btn-link"
+                            data-toggle="collapse"
+                            data-target="#ilha-grande">
+                        Ilha Grande
+                    </button>
+                </h5>
+            </div>
+
+            <div id="ilha-grande"
+                 class="collapse show"
+                 data-parent="#accordion">
+                <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed"
+                            data-toggle="collapse"
+                            data-target="#paraty">
+                        Paraty
+                    </button>
+                </h5>
+            </div>
+            <div id="paraty"
+                 class="collapse"
+                 data-parent="#accordion">
+                <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed"
+                            data-toggle="collapse"
+                            data-target="#buzios">
+                        Buzios e Arraial do Cabo
+                    </button>
+                </h5>
+            </div>
+            <div id="buzios"
+                 class="collapse"
+                 data-parent="#accordion">
+                <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                </div>
+            </div>
+        </div>
+    </div>
+
+34. Acrescentar a classe mb-3 ao elemento h4 logo antes do accordion:
+
+    class="mb-3"
+
+35. Substituir o card-body do primeiro card pelo conteúdo abaixo:
+
+    <div class="media">
+        <img class="mr-3" src="images/ilha-grande-01-abraao.jpg" alt="Vila do Abraão">
+        <div class="media-body">
+            <h5 class="mt-0">Vila do Abraão</h5>
+            <span class="texto-media-body">É o principal local de chegada à Ilha Grande. Lá você encontra pousadas, campings, restaurantes, etc.</span>
+        </div>
+    </div>
+    <div class="media">
+        <img class="mr-3" src="images/ilha-grande-02-lagoa-azul.jpg" alt="Lagoa Azul">
+        <div class="media-body">
+            <h5 class="mt-0">Lagoa Azul</h5>
+            <span class="texto-media-body">Um local muito lindo com água azul turquesa e muitos peixes. Só é possível chegar lá de barco.</span>
+        </div>
+    </div>
+    <div class="media">
+        <img class="mr-3" src="images/ilha-grande-03-aventureiro.jpg" alt="Praia do Aventureiro">
+        <div class="media-body">
+            <h5 class="mt-0">Praia do Aventureiro</h5>
+            <span class="texto-media-body">Uma das mais bonitas da Ilha Grande. A praia mede 600 metros e o mar é ótimo para a prática do Surf.</span>
+        </div>
+    </div>
+    <div class="media">
+        <img class="mr-3" src="images/ilha-grande-04-lopes-mendes.jpg" alt="Lopes Mendes">
+        <div class="media-body">
+            <h5 class="mt-0">Lopes Mendes</h5>
+            <span class="texto-media-body">A mais famosa praia da Ilha Grande. São 3 km de areia muito branca e água cristalina.</span>
+        </div>
+    </div>
+
+36. Retire os comentários no arquivo styles.css referentes à classe media do elemento img:
+
+    .media img {
+        width: 180px;
+        margin-bottom: 15px;
+        border-radius: 6%;
+    }
+
+37. Envolver cada div com a classe media com a div abaixo:
+
+    <div class="col-lg-6">
+        ...
+    </div>
+
+38. Envolver estas 4 divs com a div abaixo:
+
+    <div class="row">
+        ...
+    </div>
+
+39. Retire os comentários no arquivo styles.css referentes a dispositivos com até 480px.
+
+    @media (max-width: 480px)
+
+40. Acrescentar a div abaixo logo após a div com a classe row do primeiro card:
+
+    <div>
+        <button type="button" class="btn btn-primary btn-md btn-block">Mais Informações</button>&nbsp;
+        <a href="cadastro.html" class="btn btn-secondary btn-md btn-block">Contratar</a>
+    </div>
+
+41. Acrescentar as classes abaixo à div acima:
+
+    class="altura-da-linha mt-2"
+
+42. Acrescentar as linhas abaixo após o accordion:
+
+    <h4>Depoimentos sobre Excursões</h4>
+    <blockquote class="blockquote">
+        <p class="mb-0">Adipisci veritatis esse expedita odit neque quam! Repellat quas ad cum porro amet, maiores, ullam
+            doloremque, ab dolores in magni ea enim. Commodi quidem consequuntur animi nemo pariatur cumque
+            distinctio.</p>
+        <footer class="blockquote-footer">Luis Gustavo Pereira Filho</footer>
+    </blockquote>
+    <blockquote class="blockquote">
+        <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+            rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+            explicabo.</p>
+        <footer class="blockquote-footer">Serio Albuquerque</footer>
+    </blockquote>
+    <blockquote class="blockquote">
+        <p class="mb-0">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+            dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        <footer class="blockquote-footer">Pedro Arnaldo Soares</footer>
+    </blockquote>
+
+43. Acrescentar a classe mb-3 ao elemento h4 acima.
+
+44. Envolver cada elemento blockquote com a div abaixo:
+
+    <div class="col-lg-4 col-md-6">
+        ...
+    </div>
+
+45. Envolver as 3 divs acima com a div abaixo:
+
+    <div class="row">
+        ...
+    </div>
+
+46. Retire os comentários no arquivo styles.css referentes ao elemento blockquote:
+
+    blockquote {
+        border-left: 8px solid #ccc;
+        margin: 0.5em 10px;
+        padding: 0.5em 10px;
+    }
+
+    blockquote p {
+        font-size: 18px;
+    }
+
+47. Acrescente as linhas abaixo após o fechamento da div da classe container:
+
+    <div class='footer'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-md-4 col-sm-12'>
+                    <h5>Nossas Excursões</h5>
+                    <ul class='list-unstyled'>
+                        <li><i>Baia da </i><a href='#excursoes'> Ilha Grande</a></li>
+                        <li><a href='#excursoes'>Paraty</a></li>
+                        <li><a href='#excursoes'>Búzios e Arraial do Cabo</a></li>
+                    </ul>
+                </div>
+
+                <div class='col-md-2 col-sm-6'>
+                    <h5>Cultura</h5>
+                    <ul class='list-unstyled'>
+                        <li><a href='#'>Museus</a></li>
+                        <li><a href='#'>Feiras</a></li>
+                        <li><a href='#'>Bibliotecas</a></li>
+                        <li><a href='#'>Livrarias</a></li>
+                    </ul>
+                </div>
+
+                <div class='col-md-2 col-sm-6'>
+                    <h5>Rio à Noite</h5>
+                    <ul class='list-unstyled'>
+                        <li><a href='#'>Boates</a></li>
+                        <li><a href='#'>Bares</a></li>
+                        <li><a href='#'>Restaurantes</a></li>
+                    </ul>
+                </div>
+
+                <div class='clearfix visible-xs'></div>
+
+                <div class='col-md-2 col-sm-6'>
+                    <h5>Outros</h5>
+                    <ul class='list-unstyled'>
+                        <li><a href='#'>Carnaval</a></li>
+                        <li><span class="oi oi-globe"></span><a href='#'> Mapas</a></li>
+                    </ul>
+                </div>
+
+                <div class='col-md-2 col-sm-6'>
+                    <h5>Contato</h5>
+                    <ul class='list-unstyled'>
+                        <li><span class="oi oi-person"></span> Kathira</li>
+                        <li><span class="oi oi-phone"></span> (99)99999-9999</li>
+                        <li><span class="oi oi-envelope-closed"></span> <a href='mailto:popo@pb.dum.br'>popo@pb.dum.br</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+48. Retire os comentários no arquivo styles.css referentes ao elemento footer.
